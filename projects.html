@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeler | Bekir Emre Sarıpınar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html">bekiremre.dev</a>
+        <button class="nav-toggle" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkında</a></li>
+            <li><a class="active" href="projects.html">Projeler</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Projeler</p>
+          <h1>Ürün stratejisinden teknik mimariye uzanan çalışmalar.</h1>
+          <p class="lead">
+            Kullanıcı hedeflerini veriyle doğrulayan, performans ve erişilebilirlik
+            standartlarını gözeten platformlar geliştiriyorum.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="project-list">
+            <article class="project-detail">
+              <div class="project-detail__header">
+                <span class="project-detail__tag">Finans · 2024</span>
+                <h2>Parametrik Tahmin Motoru</h2>
+              </div>
+              <p>
+                Farklı risk modellerini aynı anda çalıştıran hibrit bir tahmin motoru
+                geliştirdim. Graf tabanlı veri modeli ile %42 daha hızlı eğitim süresi
+                ve %18 daha yüksek doğruluk elde edildi.
+              </p>
+              <ul class="project-detail__stack">
+                <li>TypeScript</li>
+                <li>GraphQL</li>
+                <li>Apache Flink</li>
+                <li>GCP</li>
+              </ul>
+            </article>
+
+            <article class="project-detail">
+              <div class="project-detail__header">
+                <span class="project-detail__tag">SaaS · 2023</span>
+                <h2>Ürün Keşif Merkezi</h2>
+              </div>
+              <p>
+                Tasarım araştırmaları, yol haritaları ve metrikleri tek arayüzde
+                buluşturduğumuz SaaS platformuna öncülük ettim. Segment bazlı deney
+                yönetimi sayesinde ekipler ortalama iki kat daha hızlı iterasyon yaptı.
+              </p>
+              <ul class="project-detail__stack">
+                <li>Next.js</li>
+                <li>Hasura</li>
+                <li>Storybook</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </article>
+
+            <article class="project-detail">
+              <div class="project-detail__header">
+                <span class="project-detail__tag">Sağlık · 2022</span>
+                <h2>Klinik İzleme Panosu</h2>
+              </div>
+              <p>
+                Gerçek zamanlı veri akışlarından kritik sinyalleri çıkararak klinik ekiplerin
+                karar alma süreçlerini hızlandıran görselleştirme panosu oluşturdum. React
+                tabanlı mikro-frontend yaklaşımı benimsedik.
+              </p>
+              <ul class="project-detail__stack">
+                <li>React</li>
+                <li>D3.js</li>
+                <li>gRPC</li>
+                <li>Prometheus</li>
+              </ul>
+            </article>
+
+            <article class="project-detail">
+              <div class="project-detail__header">
+                <span class="project-detail__tag">Perakende · 2021</span>
+                <h2>Dinamik Fiyatlama Stüdyosu</h2>
+              </div>
+              <p>
+                Makine öğrenmesi çıktılarının ürün yöneticileri tarafından okunabilir kılınması
+                için açıklanabilirliği yüksek arayüzler geliştirdim. Hipotez testleri otomatik
+                raporlandı.
+              </p>
+              <ul class="project-detail__stack">
+                <li>Vue 3</li>
+                <li>FastAPI</li>
+                <li>Snowflake</li>
+                <li>Airflow</li>
+              </ul>
+            </article>
+
+            <article class="project-detail">
+              <div class="project-detail__header">
+                <span class="project-detail__tag">Lojistik · 2020</span>
+                <h2>Gerçek Zamanlı Filo Yönetimi</h2>
+              </div>
+              <p>
+                Telematik verileri işleyip tahmin modellerine besleyen bulut tabanlı mimari
+                kurdum. Ops ekipleri için AR destekli bir durum odası tasarladık.
+              </p>
+              <ul class="project-detail__stack">
+                <li>Node.js</li>
+                <li>WebSockets</li>
+                <li>ElasticSearch</li>
+                <li>Kubernetes</li>
+              </ul>
+            </article>
+
+            <article class="project-detail">
+              <div class="project-detail__header">
+                <span class="project-detail__tag">Kamu · 2019</span>
+                <h2>Açık Veri Portali</h2>
+              </div>
+              <p>
+                Belediyeler için açık veri setlerini standartlaştıran ve vatandaşların etkileşime
+                geçmesini sağlayan modüler portalı inşa ettim. Erişilebilirlik denetimlerini test
+                otomasyonuna dahil ettik.
+              </p>
+              <ul class="project-detail__stack">
+                <li>Angular</li>
+                <li>NgRx</li>
+                <li>.NET Core</li>
+                <li>Azure</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">bekiremre.dev</p>
+          <p>
+            Kullanıcı odaklı ürünleri hız ve kaliteyle hayata geçirmek için
+            beraber çalışalım.
+          </p>
+        </div>
+        <div>
+          <p class="footer-title">İletişim</p>
+          <a href="mailto:bekiremresaripinar03@gmail.com">bekiremresaripinar03@gmail.com</a>
+          <a
+            href="https://www.linkedin.com/in/bekir-emre-sar%C4%B1p%C4%B1nar-316834175/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/BemreSTR" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+        </div>
+        <div>
+          <p class="footer-title">Favori Alanlar</p>
+          <ul>
+            <li>Ürün analiz platformları</li>
+            <li>Veri görselleştirme</li>
+            <li>Deney tasarımı</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">© <span id="year"></span> Bekir Emre Sarıpınar</p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

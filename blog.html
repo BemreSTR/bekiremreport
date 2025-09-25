@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Bekir Emre Sarıpınar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html">bekiremre.dev</a>
+        <button class="nav-toggle" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkında</a></li>
+            <li><a href="projects.html">Projeler</a></li>
+            <li><a class="active" href="blog.html">Blog</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Blog</p>
+          <h1>Yazılım geliştirme ve ürün yönetimi üzerine düşüncelerim.</h1>
+          <p class="lead">
+            Teknoloji, ürün stratejisi ve yazılım geliştirme süreçleriyle ilgili
+            deneyimlerimi ve gözlemlerimi paylaşıyorum.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="blog-filters">
+            <button class="filter-btn active" data-category="all">Tümü</button>
+            <button class="filter-btn" data-category="Teknik">Teknik</button>
+            <button class="filter-btn" data-category="Ürün">Ürün</button>
+            <button class="filter-btn" data-category="Kültür">Kültür</button>
+            <button class="filter-btn" data-category="Tasarım">Tasarım</button>
+            <button class="filter-btn" data-category="Strateji">Strateji</button>
+          </div>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <div class="blog-card__header">
+                <span class="blog-card__date">15 Mart 2024</span>
+                <span class="blog-card__category">Teknik</span>
+              </div>
+              <h2><a href="blog/post1.html">Modern Frontend Mimarilerinde Performans Optimizasyonu</a></h2>
+              <p>
+                Büyük ölçekli uygulamalarda frontend performansını nasıl optimize
+                edebiliriz? React, Vue ve modern build araçlarıyla performans
+                stratejileri üzerine derinlemesine bir bakış.
+              </p>
+              <div class="blog-card__meta">
+                <span class="blog-card__read-time">8 dakika okuma</span>
+                <a href="blog/post1.html" class="blog-card__link">Devamını Oku →</a>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__header">
+                <span class="blog-card__date">28 Şubat 2024</span>
+                <span class="blog-card__category">Ürün</span>
+              </div>
+              <h2><a href="blog/post2.html">Ürün Geliştirmede Veri Odaklı Karar Alma</a></h2>
+              <p>
+                Kullanıcı davranışlarını analiz ederek ürün stratejilerini nasıl
+                şekillendirebiliriz? A/B testleri, metrikler ve kullanıcı geri
+                bildirimlerinin etkili kullanımı.
+              </p>
+              <div class="blog-card__meta">
+                <span class="blog-card__read-time">6 dakika okuma</span>
+                <a href="blog/post2.html" class="blog-card__link">Devamını Oku →</a>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__header">
+                <span class="blog-card__date">10 Şubat 2024</span>
+                <span class="blog-card__category">Kültür</span>
+              </div>
+              <h2><a href="blog/post3.html">Uzaktan Çalışan Yazılım Takımlarında Etkili İletişim</a></h2>
+              <p>
+                Dağıtık takımlarda nasıl verimli çalışılır? Asenkron iletişim
+                stratejileri, dokümantasyon kültürü ve takım dinamikleri üzerine
+                deneyimlerim.
+              </p>
+              <div class="blog-card__meta">
+                <span class="blog-card__read-time">5 dakika okuma</span>
+                <a href="blog/post3.html" class="blog-card__link">Devamını Oku →</a>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__header">
+                <span class="blog-card__date">25 Ocak 2024</span>
+                <span class="blog-card__category">Teknik</span>
+              </div>
+              <h2><a href="blog/post4.html">Microservice Mimarilerinde Observability</a></h2>
+              <p>
+                Dağıtık sistemlerde nasıl gözlemlenebilirlik sağlanır? Loglama,
+                metrikler ve tracing konularında pratik çözümler ve araç önerileri.
+              </p>
+              <div class="blog-card__meta">
+                <span class="blog-card__read-time">10 dakika okuma</span>
+                <a href="blog/post4.html" class="blog-card__link">Devamını Oku →</a>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__header">
+                <span class="blog-card__date">8 Ocak 2024</span>
+                <span class="blog-card__category">Tasarım</span>
+              </div>
+              <h2><a href="blog/post5.html">Design System'lerin Evrimi: Component'lerden Token'lara</a></h2>
+              <p>
+                Modern design system'ler nasıl gelişti? Token-based design
+                approach ve ölçeklenebilir tasarım sistemleri kurma stratejileri.
+              </p>
+              <div class="blog-card__meta">
+                <span class="blog-card__read-time">7 dakika okuma</span>
+                <a href="blog/post5.html" class="blog-card__link">Devamını Oku →</a>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__header">
+                <span class="blog-card__date">20 Aralık 2023</span>
+                <span class="blog-card__category">Strateji</span>
+              </div>
+              <h2><a href="blog/post6.html">Teknik Borç Yönetimi: Ne Zaman Ödemeli, Ne Zaman Yatırım Yapmalı?</a></h2>
+              <p>
+                Teknik borç kavramını nasıl anlamalıyız? Stratejik karar alma,
+                önceliklendirme ve uzun vadeli ürün sağlığı için teknik borç yönetimi.
+              </p>
+              <div class="blog-card__meta">
+                <span class="blog-card__read-time">9 dakika okuma</span>
+                <a href="blog/post6.html" class="blog-card__link">Devamını Oku →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">bekiremre.dev</p>
+          <p>
+            Kullanıcı odaklı ürünleri hız ve kaliteyle hayata geçirmek için
+            beraber çalışalım.
+          </p>
+        </div>
+        <div>
+          <p class="footer-title">İletişim</p>
+          <a href="mailto:bekiremresaripinar03@gmail.com">bekiremresaripinar03@gmail.com</a>
+          <a
+            href="https://www.linkedin.com/in/bekir-emre-sar%C4%B1p%C4%B1nar-316834175/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/BemreSTR" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+        </div>
+        <div>
+          <p class="footer-title">Favori Alanlar</p>
+          <ul>
+            <li>Ürün analiz platformları</li>
+            <li>Veri görselleştirme</li>
+            <li>Deney tasarımı</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">© <span id="year"></span> Bekir Emre Sarıpınar</p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

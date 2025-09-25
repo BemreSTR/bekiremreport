@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim | Bekir Emre Sarıpınar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html">bekiremre.dev</a>
+        <button class="nav-toggle" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkında</a></li>
+            <li><a href="projects.html">Projeler</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a class="active" href="contact.html">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">İletişim</p>
+          <h1>Birlikte neler inşa edebileceğimizi konuşalım.</h1>
+          <p class="lead">
+            Yeni fikirler, danışmanlık ve teknik keşif süreçleri için bana ulaşın.
+            24 saat içerisinde geri dönüş yapıyorum.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <h2>Hızlı Bağlantılar</h2>
+            <ul>
+              <li>
+                <span>E-posta</span>
+                <a href="mailto:bekiremresaripinar03@gmail.com">bekiremresaripinar03@gmail.com</a>
+              </li>
+              <li>
+                <span>LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/bekir-emre-sar%C4%B1p%C4%B1nar-316834175/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >linkedin.com/in/bekir-emre-sarıpınar</a
+                >
+              </li>
+              <li>
+                <span>GitHub</span>
+                <a href="https://github.com/BemreSTR" target="_blank" rel="noreferrer"
+                  >github.com/BemreSTR</a
+                >
+              </li>
+              <li>
+                <span>Konum</span>
+                <p>Gebze, Kocaeli · Uzaktan çalışmaya açık</p>
+              </li>
+            </ul>
+            <div class="contact-note">
+              <h3>Takvim paylaşımı</h3>
+              <p>
+                İlk görüşme için 30 dakikalık ürün veya teknik keşif çağrısı
+                planlayabiliriz. İhtiyacınızı paylaşmanız yeterli.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h2>Mesaj Gönder</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Adınız</label>
+                <input type="text" id="name" name="name" placeholder="Ad Soyad" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-posta</label>
+                <input type="email" id="email" name="email" placeholder="ornek@firma.com" required />
+              </div>
+              <div class="form-group">
+                <label for="topic">Konu</label>
+                <select id="topic" name="topic">
+                  <option>Ürün keşfi</option>
+                  <option>Teknik danışmanlık</option>
+                  <option>Ekip mentoring</option>
+                  <option>Etkinlik ve konuşma</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Mesaj</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="İhtiyacınızdan kısaca bahsedin"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary">Mesajı Gönder</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">bekiremre.dev</p>
+          <p>
+            Kullanıcı odaklı ürünleri hız ve kaliteyle hayata geçirmek için
+            beraber çalışalım.
+          </p>
+        </div>
+        <div>
+          <p class="footer-title">İletişim</p>
+          <a href="mailto:bekiremresaripinar03@gmail.com">bekiremresaripinar03@gmail.com</a>
+          <a
+            href="https://www.linkedin.com/in/bekir-emre-sar%C4%B1p%C4%B1nar-316834175/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/BemreSTR" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+        </div>
+        <div>
+          <p class="footer-title">Favori Alanlar</p>
+          <ul>
+            <li>Ürün analiz platformları</li>
+            <li>Veri görselleştirme</li>
+            <li>Deney tasarımı</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">© <span id="year"></span> Bekir Emre Sarıpınar</p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

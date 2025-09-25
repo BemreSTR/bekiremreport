@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Frontend Mimarilerinde Performans Optimizasyonu | Blog | Bekir Emre Sarıpınar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="../index.html">bekiremre.dev</a>
+        <button class="nav-toggle" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="../about.html">Hakkında</a></li>
+            <li><a href="../projects.html">Projeler</a></li>
+            <li><a class="active" href="../blog.html">Blog</a></li>
+            <li><a href="../contact.html">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="blog-post">
+            <div class="blog-post__header">
+              <span class="blog-post__category">Teknik</span>
+              <h1 class="blog-post__title">Modern Frontend Mimarilerinde Performans Optimizasyonu</h1>
+              <div class="blog-post__meta">
+                <span class="blog-post__date">15 Mart 2024</span>
+                <span class="blog-post__read-time">8 dakika okuma</span>
+              </div>
+            </div>
+
+            <div class="blog-post__content">
+              <p>
+                Modern web uygulamaları geliştirirken performans, genellikle 
+                göz ardı edilen ancak kritik öneme sahip bir faktördür. Kullanıcı 
+                deneyimi doğrudan performans metriklerine bağlıdır ve bu da iş 
+                sonuçlarını etkiler. Bu yazıda, büyük ölçekli uygulamalarda frontend 
+                performansını nasıl optimize edebileceğimizi derinlemesine 
+                inceleyeceğiz.
+              </p>
+
+              <h2>Performansın Önemi</h2>
+              <p>
+                Google'ın araştırmalarına göre, sayfa yükleme süresi 1 saniyeden 
+                fazla olduğunda bounce rate (sayfayı terk etme oranı) %32 artıyor. 
+                Bu, performans optimizasyonunun sadece teknik bir gereklilik değil, 
+                aynı zamanda iş stratejisi olduğunu gösteriyor.
+              </p>
+
+              <blockquote>
+                "Performans bir özellik değildir, bir temel gerekliliktir. Kullanıcılar 
+                hızlı ve duyarlı uygulamalar bekler."
+              </blockquote>
+
+              <h2>Core Web Vitals ve Metrikler</h2>
+              <p>
+                Google, kullanıcı deneyimini ölçmek için üç temel metrik tanımlamıştır:
+              </p>
+
+              <h3>1. Largest Contentful Paint (LCP)</h3>
+              <p>
+                Sayfanın ana içeriğinin ne kadar sürede yüklendiğini ölçer. İdeal 
+                değer 2.5 saniyenin altındadır. LCP'yi optimize etmek için:
+              </p>
+
+              <ul>
+                <li>Resimleri uygun formatta (WebP, AVIF) ve boyutta sıkıştırın</li>
+                <li>Server-side rendering (SSR) veya static site generation (SSG) kullanın</li>
+                <li>Critical CSS'i inline olarak yükleyin</li>
+                <li>JavaScript'i lazy loading ile yükleyin</li>
+              </ul>
+
+              <h3>2. First Input Delay (FID)</h3>
+              <p>
+                Kullanıcının sayfa ile ilk etkileşiminden browser'ın yanıt verene kadar 
+                geçen süredir. İdeal değer 100ms'nin altındadır. FID için:
+              </p>
+
+              <ul>
+                <li>Uzun görevleri (long tasks) bölün</li>
+                <li>JavaScript'i non-blocking şekilde yükleyin</li>
+                <li>Web Workers kullanın</li>
+                <li>Third-party script'leri optimize edin</li>
+              </ul>
+
+              <h3>3. Cumulative Layout Shift (CLS)</h3>
+              <p>
+                Sayfa yüklenirken beklenmedik görsel değişiklikleri ölçer. İdeal değer 
+                0.1'in altındadır. CLS için:
+              </p>
+
+              <ul>
+                <li>Resimler ve reklamlar için boyut belirtin</li>
+                <li>Font'ları yüklerken alan ayırın</li>
+                <li>Dinamik içerikleri dikkatli ekleyin</li>
+              </ul>
+
+              <h2>React Performans Optimizasyonu</h2>
+              <p>
+                React uygulamalarında performans için birkaç kritik strateji vardır:
+              </p>
+
+              <h3>Component Optimizasyonu</h3>
+              <pre><code>// Memoization ile gereksiz re-render'ları önleyin
+const ExpensiveComponent = React.memo(({ data }) => {
+  return <div>{data.map(item => <Item key={item.id} item={item} />)}</div>;
+});
+
+// Hesaplama cache'leme
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(props.data);
+}, [props.data]);
+
+// Event handler'ları stabilize etme
+const handleClick = useCallback(() => {
+  // handler logic
+}, [dependency]);</code></pre>
+
+              <h3>Bundle Optimizasyonu</h3>
+              <p>
+                Modern build araçları ile bundle boyutunu optimize edebilirsiniz:
+              </p>
+
+              <ul>
+                <li><strong>Code Splitting:</strong> Uygulamayı parçalara bölerek sadece ihtiyaç duyulan kodu yükleyin</li>
+                <li><strong>Tree Shaking:</strong> Kullanılmayan kodu bundle'dan çıkarın</li>
+                <li><strong>Dynamic Imports:</strong> Component'leri lazy loading ile yükleyin</li>
+              </ul>
+
+              <pre><code>// Dynamic import örneği
+const LazyComponent = React.lazy(() => import('./LazyComponent'));
+
+function App() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LazyComponent />
+    </Suspense>
+  );
+}</code></pre>
+
+              <h2>Vue.js Performans Stratejileri</h2>
+              <p>
+                Vue.js uygulamalarında performans için farklı yaklaşımlar gereklidir:
+              </p>
+
+              <h3>Reactivity Optimizasyonu</h3>
+              <ul>
+                <li>Büyük veri setleri için <code>shallowRef</code> kullanın</li>
+                <li>Gereksiz reactivity'den kaçının</li>
+                <li><code>v-once</code> directive ile static content'i optimize edin</li>
+              </ul>
+
+              <h3>Async Component'ler</h3>
+              <pre><code>// Vue 3'te async component
+import { defineAsyncComponent } from 'vue'
+
+const AsyncComp = defineAsyncComponent(() =>
+  import('./components/AsyncComponent.vue')
+)</code></pre>
+
+              <h2>Modern Build Araçları</h2>
+              <p>
+                Vite, Webpack, ve Parcel gibi modern build araçları performans 
+                optimizasyonu için önemli özellikler sunar:
+              </p>
+
+              <h3>Vite Avantajları</h3>
+              <ul>
+                <li><strong>Hızlı Development:</strong> Native ES modules ile anında hot reload</li>
+                <li><strong>Optimized Production Build:</strong> Rollup ile otomatik optimizasyon</li>
+                <li><strong>CSS Code Splitting:</strong> Otomatik CSS ayrıştırma</li>
+              </ul>
+
+              <h3>Webpack Optimizasyonları</h3>
+              <ul>
+                <li><strong>SplitChunksPlugin:</strong> Paylaşılan kodları ayrı chunk'lara bölme</li>
+                <li><strong>TerserPlugin:</strong> JavaScript minifikasyonu</li>
+                <li><strong>CSSMinimizerPlugin:</strong> CSS optimizasyonu</li>
+              </ul>
+
+              <h2>Monitörleme ve Test</h2>
+              <p>
+                Performans optimizasyonu sürekli bir süreçtir. Aşağıdaki araçlarla 
+                performansı monitör edebilirsiniz:
+              </p>
+
+              <ul>
+                <li><strong>Lighthouse:</strong> Google'ın performans audit aracı</li>
+                <li><strong>WebPageTest:</strong> Detaylı performans analizi</li>
+                <li><strong>Chrome DevTools:</strong> Performance ve Network panelleri</li>
+                <li><strong>React DevTools Profiler:</strong> Component performans analizi</li>
+              </ul>
+
+              <h2>Sonuç</h2>
+              <p>
+                Modern frontend performans optimizasyonu, çok katmanlı bir yaklaşımdır. 
+                Core Web Vitals'tan başlayarak, framework spesifik optimizasyonlara, 
+                build araçları konfigürasyonundan monitörleme araçlarına kadar geniş 
+                bir yelpazede strateji gerektirir.
+              </p>
+
+              <p>
+                Unutmayın, performans optimizasyonu bir defalık bir görev değil, 
+                sürekli iyileştirme gereken bir süreçtir. Kullanıcı geri bildirimlerini 
+                dinleyin, metrikleri takip edin ve yeni optimizasyon tekniklerini 
+                öğrenmeye devam edin.
+              </p>
+
+              <div class="blog-post__navigation">
+                <div class="blog-post__nav-prev">
+                  <a href="../blog.html" class="blog-post__nav-link">← Blog'a Dön</a>
+                </div>
+                <div class="blog-post__nav-next">
+                  <a href="post2.html" class="blog-post__nav-link">Sonraki Yazı →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">bekiremre.dev</p>
+          <p>
+            Kullanıcı odaklı ürünleri hız ve kaliteyle hayata geçirmek için
+            beraber çalışalım.
+          </p>
+        </div>
+        <div>
+          <p class="footer-title">İletişim</p>
+          <a href="mailto:bekiremresaripinar03@gmail.com">bekiremresaripinar03@gmail.com</a>
+          <a
+            href="https://www.linkedin.com/in/bekir-emre-sar%C4%B1p%C4%B1nar-316834175/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/BemreSTR" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+        </div>
+        <div>
+          <p class="footer-title">Favori Alanlar</p>
+          <ul>
+            <li>Ürün analiz platformları</li>
+            <li>Veri görselleştirme</li>
+            <li>Deney tasarımı</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">© <span id="year"></span> Bekir Emre Sarıpınar</p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
