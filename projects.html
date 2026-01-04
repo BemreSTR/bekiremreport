@@ -1,209 +1,269 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeler | Bekir Emre Sarıpınar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav-container">
-        <a class="brand" href="index.html">bekiremre.dev</a>
-        <button class="nav-toggle" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav class="site-nav">
-          <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="about.html">Hakkında</a></li>
-            <li><a class="active" href="projects.html">Projeler</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">İletişim</a></li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeler | Bekir Emre Sarıpınar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index.html">bekiremre.dev</a>
+      <button class="nav-toggle" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkında</a></li>
+          <li><a class="active" href="projects.html">Projeler</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Projeler</p>
+        <h1>Ürün stratejisinden teknik mimariye uzanan çalışmalar.</h1>
+        <p class="lead">
+          Kullanıcı hedeflerini veriyle doğrulayan, performans ve erişilebilirlik
+          standartlarını gözeten platformlar geliştiriyorum.
+        </p>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="page-hero">
-        <div class="container narrow">
-          <p class="eyebrow">Projeler</p>
-          <h1>Ürün stratejisinden teknik mimariye uzanan çalışmalar.</h1>
-          <p class="lead">
-            Kullanıcı hedeflerini veriyle doğrulayan, performans ve erişilebilirlik
-            standartlarını gözeten platformlar geliştiriyorum.
-          </p>
-        </div>
-      </section>
+    <section class="section">
+      <div class="container">
+        <div class="project-list">
+          <article class="project-detail">
+            <div class="project-detail__header">
+              <span class="project-detail__tag">Backend · Go · 2025</span>
+              <h2>ZenBlog: Performans Odaklı Blog Motoru</h2>
+            </div>
+            <p>
+              Go dili ile geliştirilmiş, hız ve sadeliği ön planda tutan modern bir blog motorudur.
+              İçerikleri Markdown dosyalarından okuyarak dinamik temalar ve statik varlıklarla
+              birlikte yüksek performanslı bir web sitesi olarak sunar. DigitalOcean Droplet üzerinde
+              kendi VPS sunucumda host edilmektedir.
+            </p>
+            <div class="project-detail__substack">
+              <strong>Backend & Deployment:</strong> Go (Golang), HTML Templates, DigitalOcean VPS<br>
+              <strong>Frontend & Content:</strong> JavaScript, CSS, Markdown
+            </div>
+            <ul class="project-detail__stack">
+              <li>Go</li>
+              <li>Markdown</li>
+              <li>DigitalOcean</li>
+              <li>VPS</li>
+              <li>VPS Management</li>
+            </ul>
+          </article>
 
-      <section class="section">
-        <div class="container">
-          <div class="project-list">
-            <article class="project-detail">
-              <div class="project-detail__header">
-                <span class="project-detail__tag">Finans · 2024</span>
-                <h2>Parametrik Tahmin Motoru</h2>
-              </div>
-              <p>
-                Farklı risk modellerini aynı anda çalıştıran hibrit bir tahmin motoru
-                geliştirdim. Graf tabanlı veri modeli ile %42 daha hızlı eğitim süresi
-                ve %18 daha yüksek doğruluk elde edildi.
-              </p>
-              <ul class="project-detail__stack">
-                <li>TypeScript</li>
-                <li>GraphQL</li>
-                <li>Apache Flink</li>
-                <li>GCP</li>
-              </ul>
-            </article>
+          <article class="project-detail">
+            <div class="project-detail__header">
+              <span class="project-detail__tag">Eğitim · EdTech · 2025</span>
+              <h2>Din Akademi: İnteraktif Eğitim Platformu</h2>
+            </div>
+            <p>
+              5-8. sınıf öğrencileri için geliştirilmiş, Din Kültürü ve Ahlak Bilgisi dersi içeriklerini
+              modern bir arayüzle sunan eğitim platformu. YouTube entegrasyonu, Kahoot testleri ve
+              Wordwall aktiviteleri ile ders çalışmayı eğlenceli hale getirir. Firebase tabanlı admin
+              paneli sayesinde içerik yönetimi, sürükle-bırak sıralama ve anlık güncelleme imkanı sunar.
+            </p>
+            <div class="project-detail__substack">
+              <strong>Frontend:</strong> Vite, TypeScript, Vanilla CSS, SortableJS<br>
+              <strong>Backend & Cloud:</strong> Firebase (Firestore, Auth, Storage), GitHub Actions (CI/CD)
+            </div>
+            <ul class="project-detail__stack">
+              <li>Vite</li>
+              <li>TypeScript</li>
+              <li>Firebase</li>
+              <li>EdTech</li>
+              <li>Responsive Design</li>
+              <li>dinakademi.com</li>
+            </ul>
+          </article>
 
-            <article class="project-detail">
-              <div class="project-detail__header">
-                <span class="project-detail__tag">SaaS · 2023</span>
-                <h2>Ürün Keşif Merkezi</h2>
-              </div>
-              <p>
-                Tasarım araştırmaları, yol haritaları ve metrikleri tek arayüzde
-                buluşturduğumuz SaaS platformuna öncülük ettim. Segment bazlı deney
-                yönetimi sayesinde ekipler ortalama iki kat daha hızlı iterasyon yaptı.
-              </p>
-              <ul class="project-detail__stack">
-                <li>Next.js</li>
-                <li>Hasura</li>
-                <li>Storybook</li>
-                <li>PostgreSQL</li>
-              </ul>
-            </article>
+          <article class="project-detail">
+            <div class="project-detail__header">
+              <span class="project-detail__tag">E-Ticaret · 2025</span>
+              <h2>MyBaby: Bebek Ürünleri E-Ticaret Platformu</h2>
+            </div>
+            <p>
+              Bebek ürünleri sektörü için tasarlanmış, modern ve kullanıcı dostu bir e-ticaret platformu.
+              Ürün listeleme, gelişmiş filtreleme, sepet yönetimi ve misafir sipariş sistemi gibi
+              temel e-ticaret fonksiyonlarını barındırır. Performans odaklı MERN stack mimarisiyle
+              tüm cihazlarda akıcı bir alışveriş deneyimi sunar.
+            </p>
+            <div class="project-detail__substack">
+              <strong>Stack:</strong> React.js, Node.js, Express.js, MongoDB<br>
+              <strong>Öne Çıkan:</strong> Sepet Sistemi, Dinamik Filtreleme, Responsive Design
+            </div>
+            <ul class="project-detail__stack">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>Express</li>
+              <li>E-Commerce</li>
+            </ul>
+          </article>
 
-            <article class="project-detail">
-              <div class="project-detail__header">
-                <span class="project-detail__tag">Sağlık · 2022</span>
-                <h2>Klinik İzleme Panosu</h2>
-              </div>
-              <p>
-                Gerçek zamanlı veri akışlarından kritik sinyalleri çıkararak klinik ekiplerin
-                karar alma süreçlerini hızlandıran görselleştirme panosu oluşturdum. React
-                tabanlı mikro-frontend yaklaşımı benimsedik.
-              </p>
-              <ul class="project-detail__stack">
-                <li>React</li>
-                <li>D3.js</li>
-                <li>gRPC</li>
-                <li>Prometheus</li>
-              </ul>
-            </article>
+          <article class="project-detail">
+            <div class="project-detail__header">
+              <span class="project-detail__tag">AI · Finans · 2025</span>
+              <h2>💰 Fatura Takip Asistanı</h2>
+            </div>
+            <p>
+              Modern web tabanlı fatura takip uygulaması. Google Gemini 2.5 Flash AI desteği ile
+              fatura fotoğraflarından otomatik veri çekme ve Firebase ile gerçek zamanlı bulut
+              senkronizasyonu sağlar. Harcama analizleri, kategori bazlı grafikler ve çoklu kullanıcı
+              desteği ile kişisel finans yönetimini kolaylaştırır.
+            </p>
+            <div class="project-detail__substack">
+              <strong>Frontend:</strong> React 19, TypeScript, Vite 6, Tailwind CSS, Recharts<br>
+              <strong>Backend & AI:</strong> Firebase (Auth, Firestore), Google Gemini 2.5 Flash
+            </div>
+            <ul class="project-detail__stack">
+              <li>React 19</li>
+              <li>TypeScript</li>
+              <li>Gemini AI</li>
+              <li>Firebase</li>
+              <li>Tailwind CSS</li>
+              <li>GitHub Pages</li>
+            </ul>
+          </article>
 
-            <article class="project-detail">
-              <div class="project-detail__header">
-                <span class="project-detail__tag">Perakende · 2021</span>
-                <h2>Dinamik Fiyatlama Stüdyosu</h2>
-              </div>
-              <p>
-                Makine öğrenmesi çıktılarının ürün yöneticileri tarafından okunabilir kılınması
-                için açıklanabilirliği yüksek arayüzler geliştirdim. Hipotez testleri otomatik
-                raporlandı.
-              </p>
-              <ul class="project-detail__stack">
-                <li>Vue 3</li>
-                <li>FastAPI</li>
-                <li>Snowflake</li>
-                <li>Airflow</li>
-              </ul>
-            </article>
+          <article class="project-detail">
+            <div class="project-detail__header">
+              <span class="project-detail__tag">SaaS · Team Lead · 2024</span>
+              <h2>SafePass: Öğrenci Taşımacılığı Yönetim Platformu</h2>
+            </div>
+            <p>
+              6 kişilik bir ekibe liderlik ederek geliştirdiğimiz SafePass, öğrenci güvenliğini merkeze alan
+              çok katmanlı bir yönetim platformudur. Gerçek zamanlı GPS takibi, rule-based acil durum
+              yönetimi ve veli-şoför-okul arası kesintisiz iletişim sağlar. Role-based access control (RBAC),
+              anlık bildirimler ve PII maskeleme destekli raporlama sistemlerini içerir.
+            </p>
+            <div class="project-detail__substack">
+              <strong>Backend:</strong> NestJS, TypeORM, PostgreSQL, Firebase Auth, Socket.io<br>
+              <strong>Web & Mobile:</strong> Next.js 16, Tailwind CSS, Flutter, Google Maps
+            </div>
+            <ul class="project-detail__stack">
+              <li>NestJS</li>
+              <li>Next.js</li>
+              <li>Flutter</li>
+              <li>PostgreSQL</li>
+              <li>Firebase</li>
+              <li>DigitalOcean</li>
+            </ul>
+          </article>
 
-            <article class="project-detail">
-              <div class="project-detail__header">
-                <span class="project-detail__tag">Lojistik · 2020</span>
-                <h2>Gerçek Zamanlı Filo Yönetimi</h2>
-              </div>
-              <p>
-                Telematik verileri işleyip tahmin modellerine besleyen bulut tabanlı mimari
-                kurdum. Ops ekipleri için AR destekli bir durum odası tasarladık.
-              </p>
-              <ul class="project-detail__stack">
-                <li>Node.js</li>
-                <li>WebSockets</li>
-                <li>ElasticSearch</li>
-                <li>Kubernetes</li>
-              </ul>
-            </article>
+          <article class="project-detail">
+            <div class="project-detail__header">
+              <span class="project-detail__tag">PWA · 2024</span>
+              <h2>Okuma Takip Uygulaması</h2>
+            </div>
+            <p>
+              Günlük kitap okuma alışkanlıklarını dijital ortamda takip etmek için
+              geliştirilmiş, mobil uyumlu bir web uygulaması. Okuma hedefleri belirleme,
+              ilerleme takibi ve gerçek zamanlı senkronizasyon özelliklerine sahiptir.
+            </p>
+            <ul class="project-detail__stack">
+              <li>React 19</li>
+              <li>Vite 7</li>
+              <li>shadcn/ui</li>
+              <li>Supabase</li>
+              <li>Tailwind CSS</li>
+              <li>PWA</li>
+            </ul>
+          </article>
 
-            <article class="project-detail">
-              <div class="project-detail__header">
-                <span class="project-detail__tag">Kamu · 2019</span>
-                <h2>Açık Veri Portali</h2>
-              </div>
-              <p>
-                Belediyeler için açık veri setlerini standartlaştıran ve vatandaşların etkileşime
-                geçmesini sağlayan modüler portalı inşa ettim. Erişilebilirlik denetimlerini test
-                otomasyonuna dahil ettik.
-              </p>
-              <ul class="project-detail__stack">
-                <li>Angular</li>
-                <li>NgRx</li>
-                <li>.NET Core</li>
-                <li>Azure</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
+          <article class="project-detail">
+            <div class="project-detail__header">
+              <span class="project-detail__tag">Tool · macOS · 2025</span>
+              <h2>netusage: macOS Network Usage Monitor</h2>
+            </div>
+            <p>
+              macOS sistemleri için geliştirilmiş, hafif ve güçlü bir komut satırı aracıdır.
+              WiFi veri kullanımını anlık olarak izler, SQLite veritabanında saklar ve saatlik,
+              günlük veya özel zaman aralıklarında detaylı raporlar sunar. Counter reset durumlarına
+              karşı dirençli mimarisi ile doğru veri takibi sağlar.
+            </p>
+            <ul class="project-detail__stack">
+              <li>Python 3.8+</li>
+              <li>SQLite</li>
+              <li>macOS System Metrics</li>
+              <li>CLI</li>
+            </ul>
+          </article>
 
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <p class="footer-brand">bekiremre.dev</p>
-          <p>
-            Kullanıcı odaklı ürünleri hız ve kaliteyle hayata geçirmek için
-            beraber çalışalım.
-          </p>
-        </div>
-        <div>
-          <p class="footer-title">İletişim</p>
-          <div class="footer-contact">
-            <a href="mailto:bekiremresaripinar03@gmail.com" class="contact-link">
-              <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              bekiremresaripinar03@gmail.com
-            </a>
-            <a href="https://www.linkedin.com/in/bekir-emre-sar%C4%B1p%C4%B1nar-316834175/" target="_blank" rel="noreferrer" class="contact-link">
-              <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-              LinkedIn
-            </a>
-            <a href="https://github.com/BemreSTR" target="_blank" rel="noreferrer" class="contact-link">
-              <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              GitHub
-            </a>
-          </div>
-        </div>
-        <div>
-          <p class="footer-title">Favori Alanlar</p>
-          <ul>
-            <li>Ürün analiz platformları</li>
-            <li>Veri görselleştirme</li>
-            <li>Deney tasarımı</li>
-          </ul>
         </div>
       </div>
-      <p class="footer-note">© <span id="year"></span> Bekir Emre Sarıpınar</p>
-    </footer>
+    </section>
+  </main>
 
-    <script src="./assets/js/main.js"></script>
-  </body>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">bekiremre.dev</p>
+        <p>
+          Kullanıcı odaklı ürünleri hız ve kaliteyle hayata geçirmek için
+          beraber çalışalım.
+        </p>
+      </div>
+      <div>
+        <p class="footer-title">İletişim</p>
+        <div class="footer-contact">
+          <a href="mailto:bekiremrebusiness@gmail.com" class="contact-link">
+            <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            bekiremrebusiness@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/bekir-emre-sar%C4%B1p%C4%B1nar-316834175/" target="_blank"
+            rel="noreferrer" class="contact-link">
+            <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/BemreSTR" target="_blank" rel="noreferrer" class="contact-link">
+            <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-title">Favori Alanlar</p>
+        <ul>
+          <li>Ürün analiz platformları</li>
+          <li>Veri görselleştirme</li>
+          <li>Deney tasarımı</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">© <span id="year"></span> Bekir Emre Sarıpınar</p>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>

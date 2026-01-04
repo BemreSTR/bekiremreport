@@ -210,7 +210,7 @@ Proje statik olduğu için dosyayı doğrudan tarayıcıda açabilirsiniz:
 
 Proje ile ilgili sorularınız veya geri bildirimleriniz için:
 
-- __E-posta__: <bekiremresaripinar03@gmail.com>
+- __E-posta__: <bekiremrebusiness@gmail.com>
 - __LinkedIn__: [Bekir Emre Sarıpınar](https://linkedin.com/in/bekir-emre-sar%C4%B1p%C4%B1nar)
 - __GitHub__: [BemreSTR](https://github.com/BemreSTR)
 
