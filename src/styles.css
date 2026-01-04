@@ -973,28 +973,28 @@ textarea {
   font-weight: 600;
 }
 
-.blog-card h3 {
-  margin-bottom: 1.25rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.35;
-  letter-spacing: -0.015em;
+.blog-card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
-.blog-card h3 a {
+.blog-card h2 a {
   color: var(--text);
   transition: color 0.2s ease;
 }
 
-.blog-card h3 a:hover {
+.blog-card h2 a:hover {
   color: var(--accent);
 }
 
 .blog-card p {
-  color: var(--text-secondary);
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin-bottom: 1.75rem;
+  color: var(--muted-foreground);
+  font-size: 0.975rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
   flex-grow: 1;
 }
 

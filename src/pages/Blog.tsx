@@ -15,10 +15,15 @@ const Blog = () => {
   const { t } = useTranslation()
 
   const filteredPosts = useMemo(() => {
-    if (activeCategory === 'all') {
-      return blogPosts
-    }
-    return blogPosts.filter((post) => post.categoryKey === activeCategory)
+    const posts = activeCategory === 'all'
+      ? [...blogPosts]
+      : blogPosts.filter((post) => post.categoryKey === activeCategory)
+
+    return posts.sort((a, b) => {
+      const dateA = a.dateISO ? new Date(a.dateISO).getTime() : 0
+      const dateB = b.dateISO ? new Date(b.dateISO).getTime() : 0
+      return dateB - dateA
+    })
   }, [activeCategory])
 
   return (
