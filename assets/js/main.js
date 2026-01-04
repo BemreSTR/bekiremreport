@@ -1,28 +1,3 @@
-const navToggle = document.querySelector('.nav-toggle');
-const siteNav = document.querySelector('.site-nav');
-const yearEl = document.querySelector('#year');
-
-if (yearEl) {
-  yearEl.textContent = new Date().getFullYear();
-}
-
-if (navToggle && siteNav) {
-  navToggle.addEventListener('click', () => {
-    siteNav.classList.toggle('open');
-    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-    navToggle.setAttribute('aria-expanded', String(!expanded));
-  });
-
-  siteNav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      if (siteNav.classList.contains('open')) {
-        siteNav.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-  });
-}
-
 // Blog filtering functionality
 const filterButtons = document.querySelectorAll('.filter-btn');
 const blogCards = document.querySelectorAll('.blog-card');
@@ -34,12 +9,12 @@ if (filterButtons.length > 0 && blogCards.length > 0) {
       filterButtons.forEach(btn => btn.classList.remove('active'));
       // Add active class to clicked button
       button.classList.add('active');
-      
+
       const selectedCategory = button.getAttribute('data-category');
-      
+
       blogCards.forEach(card => {
         const category = card.querySelector('.blog-card__category').textContent;
-        
+
         if (selectedCategory === 'all' || category === selectedCategory) {
           card.style.display = 'flex';
           // Add fade-in animation
@@ -57,3 +32,34 @@ if (filterButtons.length > 0 && blogCards.length > 0) {
     });
   });
 }
+
+function initMobileNav() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const siteNav = document.querySelector('.site-nav');
+
+  if (!navToggle || !siteNav) {
+    return;
+  }
+
+  navToggle.addEventListener('click', () => {
+    siteNav.classList.toggle('open');
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    const nextExpanded = String(!expanded);
+    navToggle.setAttribute('aria-expanded', nextExpanded);
+    navToggle.classList.toggle('is-open', nextExpanded === 'true');
+  });
+
+  siteNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (siteNav.classList.contains('open')) {
+        siteNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.classList.remove('is-open');
+      }
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initMobileNav();
+});
