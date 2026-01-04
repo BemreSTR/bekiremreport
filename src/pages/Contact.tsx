@@ -1,10 +1,12 @@
 import { useTranslation } from 'react-i18next'
+import Seo from '@/components/Seo'
 
 const Contact = () => {
   const { t } = useTranslation()
 
   return (
     <main>
+      <Seo title={t('contact:seo.title')} description={t('contact:seo.description')} />
       <section className="page-hero">
         <div className="container narrow">
           <p className="eyebrow">{t('contact:hero.eyebrow')}</p>

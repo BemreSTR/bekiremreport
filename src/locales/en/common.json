@@ -23,6 +23,10 @@
     }
   },
   "home": {
+    "seo": {
+      "title": "Bekir Emre Sarıpınar | Full-Stack Software Developer",
+      "description": "Portfolio of Bekir Emre Sarıpınar. Projects and technical articles on modern web technologies, Go, React, and cloud architectures."
+    },
     "eyebrow": "Product-Minded Software Developer",
     "titleLine1": "Hi, I'm",
     "titleName": "Bekir Emre.",

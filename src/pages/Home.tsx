@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import { isSupportedLanguage } from '@/i18n'
 import { prefixLangPath } from '@/lib/lang'
 import { useTranslation } from 'react-i18next'
+import Seo from '@/components/Seo'
 
 const Home = () => {
   const { lang } = useParams()
@@ -10,6 +11,10 @@ const Home = () => {
 
   return (
     <main>
+      <Seo
+        title={t('home.seo.title')}
+        description={t('home.seo.description')}
+      />
       <section className="hero relative overflow-hidden">
         {/* Dynamic Background Elements */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none -z-10" />
@@ -50,15 +55,15 @@ const Home = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 w-full max-w-4xl border-t border-white/5 pt-12">
               <div className="flex flex-col items-center gap-2">
-                <h3 className="text-3xl font-bold text-white">{t('home.stats.stackTitle')}</h3>
+                <h2 className="text-3xl font-bold text-white uppercase tracking-wider">{t('home.stats.stackTitle')}</h2>
                 <p className="text-slate-400">{t('home.stats.stackValue')}</p>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <h3 className="text-3xl font-bold text-white">{t('home.stats.uiTitle')}</h3>
+                <h2 className="text-3xl font-bold text-white uppercase tracking-wider">{t('home.stats.uiTitle')}</h2>
                 <p className="text-slate-400">{t('home.stats.uiValue')}</p>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <h3 className="text-3xl font-bold text-white">{t('home.stats.dbTitle')}</h3>
+                <h2 className="text-3xl font-bold text-white uppercase tracking-wider">{t('home.stats.dbTitle')}</h2>
                 <p className="text-slate-400">{t('home.stats.dbValue')}</p>
               </div>
             </div>

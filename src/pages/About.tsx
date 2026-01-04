@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from 'react-i18next'
+import Seo from '@/components/Seo'
 
 interface TimelineItem {
   year: string
@@ -13,8 +14,23 @@ const About = () => {
   const heroSummaryItems = t('about:hero.summary.items', { returnObjects: true }) as string[]
   const timelineItems = t('about:timeline.items', { returnObjects: true }) as TimelineItem[]
 
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bekir Emre Sarıpınar",
+    "jobTitle": "Software Developer",
+    "url": "https://bekiremre.dev",
+    "sameAs": [
+      "https://github.com/BemreSTR",
+      "https://www.linkedin.com/in/bekir-emre-sar%C4%B1p%C4%B1nar-316834175/"
+    ],
+    "description": t('about:seo.description'),
+    "knowsAbout": ["React", "TypeScript", "Go", "Firebase", "Product Development"]
+  };
+
   return (
     <main>
+      <Seo title={t('about:seo.title')} description={t('about:seo.description')} jsonLd={personSchema} />
       <section className="page-hero about-hero">
         <div className="container about-hero__grid">
           <div className="about-hero__copy">

@@ -1,13 +1,14 @@
-import { Suspense } from 'react'
+import { lazy, Suspense } from 'react'
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
-import About from './pages/About'
-import Blog from './pages/Blog'
-import BlogPost from './pages/BlogPost'
-import Contact from './pages/Contact'
-import Home from './pages/Home'
-import NotFound from './pages/NotFound'
-import Projects from './pages/Projects'
+
+const About = lazy(() => import('./pages/About'))
+const Blog = lazy(() => import('./pages/Blog'))
+const BlogPost = lazy(() => import('./pages/BlogPost'))
+const Contact = lazy(() => import('./pages/Contact'))
+const Home = lazy(() => import('./pages/Home'))
+const NotFound = lazy(() => import('./pages/NotFound'))
+const Projects = lazy(() => import('./pages/Projects'))
 
 const App = () => (
   <HashRouter>

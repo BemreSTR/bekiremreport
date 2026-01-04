@@ -16,6 +16,7 @@
     "preinstall": "node -e \"if (process.env.npm_config_user_agent && !process.env.npm_config_user_agent.includes('pnpm')) { console.error('Please use pnpm: pnpm install'); process.exit(1) }\"",
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "postbuild": "node scripts/generate-sitemap.cjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -30,6 +31,7 @@
     "lucide-react": "^0.562.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-helmet-async": "^2.0.5",
     "react-i18next": "^16.5.1",
     "react-router-dom": "^6.30.1",
     "tailwind-merge": "^3.4.0",

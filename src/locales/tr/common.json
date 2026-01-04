@@ -23,6 +23,10 @@
     }
   },
   "home": {
+    "seo": {
+      "title": "Bekir Emre Sarıpınar | Full-Stack Yazılım Geliştirici",
+      "description": "Bekir Emre Sarıpınar'ın portfolyosu. Modern web teknolojileri, Go, React ve bulut mimarileri üzerine projeler ve teknik yazılar."
+    },
     "eyebrow": "Ürün Odaklı Yazılım Geliştirici",
     "titleLine1": "Merhaba, ben",
     "titleName": "Bekir Emre.",

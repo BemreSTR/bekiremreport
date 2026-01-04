@@ -3,6 +3,7 @@ import { isSupportedLanguage } from '@/i18n'
 import { prefixLangPath } from '@/lib/lang'
 import { useTranslation } from 'react-i18next'
 import { blogPosts } from '../data/blogPosts'
+import Seo from '@/components/Seo'
 
 const BlogPost = () => {
   const { slug, lang } = useParams()
@@ -33,12 +34,14 @@ const BlogPost = () => {
   const postDate = (isEn && post.dateEn) || post.date
   const postReadTime = (isEn && post.readTimeEn) || post.readTime
   const postContent = (isEn && post.contentEn) || post.content
+  const postExcerpt = (isEn && post.excerptEn) || post.excerpt
 
   const previousPost = postIndex > 0 ? blogPosts[postIndex - 1] : null
   const nextPost = postIndex < blogPosts.length - 1 ? blogPosts[postIndex + 1] : null
 
   return (
     <main>
+      <Seo title={postTitle} description={postExcerpt} ogType="article" date={post.dateISO} />
       <section className="page-hero">
         <div className="container">
           <div className="blog-post">

@@ -4,6 +4,7 @@ import { isSupportedLanguage } from '@/i18n'
 import { prefixLangPath } from '@/lib/lang'
 import { useTranslation } from 'react-i18next'
 import { blogPosts } from '../data/blogPosts'
+import Seo from '@/components/Seo'
 
 const categoryKeys = ['all', 'technical', 'product', 'culture', 'design', 'strategy', 'personalDevelopment'] as const
 
@@ -22,6 +23,7 @@ const Blog = () => {
 
   return (
     <main>
+      <Seo title={t('blog.title')} description={t('blog.subtitle')} />
       <section className="page-hero">
         <div className="container narrow">
           <p className="eyebrow">Blog</p>
@@ -61,9 +63,9 @@ const Blog = () => {
                       {t(`categories.${post.categoryKey}`)}
                     </span>
                   </div>
-                  <h3>
+                  <h2>
                     <Link to={prefixLangPath(currentLang, `/blog/${post.slug}`)}>{title}</Link>
-                  </h3>
+                  </h2>
                   <p>{excerpt}</p>
                   <div className="blog-card__meta">
                     <span className="blog-card__read-time">{readTime}</span>
