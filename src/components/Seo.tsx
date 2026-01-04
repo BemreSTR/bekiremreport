@@ -13,8 +13,8 @@ type SeoProps = {
   jsonLd?: object | string
 }
 
-const SITE_NAME = 'bekiremre.dev'
-const SITE_URL = 'https://bekiremre.dev'
+const SITE_NAME = 'bekiremresaripinar.online'
+const SITE_URL = 'https://bekiremresaripinar.online'
 
 function toJsonLd(value: object | string) {
   return typeof value === 'string' ? value : JSON.stringify(value)

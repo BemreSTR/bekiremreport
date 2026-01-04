@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bekiremre.dev/sitemap.xml
+Sitemap: https://bekiremresaripinar.online/sitemap.xml
