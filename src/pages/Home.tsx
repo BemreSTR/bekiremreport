@@ -2,7 +2,6 @@ import { Link, useParams } from 'react-router-dom'
 import { isSupportedLanguage } from '@/i18n'
 import { prefixLangPath } from '@/lib/lang'
 import { useTranslation } from 'react-i18next'
-import Seo from '@/components/Seo'
 
 const Home = () => {
   const { lang } = useParams()
@@ -11,7 +10,6 @@ const Home = () => {
 
   return (
     <main>
-      <Seo />
       <section className="hero relative overflow-hidden">
         {/* Dynamic Background Elements */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none -z-10" />

@@ -28,15 +28,16 @@ React + TypeScript + Vite ile hazırlanmış, blog ve proje odaklı kişisel por
 ## 🚀 Kurulum ve Çalıştırma
 
 ```bash
-npm install
-npm run dev
+corepack enable
+pnpm install
+pnpm dev
 ```
 
 Build almak için:
 
 ```bash
-npm run build
-npm run preview
+pnpm build
+pnpm preview
 ```
 
 ## ℹ️ Notlar

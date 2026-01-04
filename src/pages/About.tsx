@@ -1,5 +1,4 @@
 import { Trans, useTranslation } from 'react-i18next'
-import Seo from '@/components/Seo'
 
 interface TimelineItem {
   year: string
@@ -16,7 +15,6 @@ const About = () => {
 
   return (
     <main>
-      <Seo title={t('about:seo.title')} description={t('about:seo.description')} />
       <section className="page-hero about-hero">
         <div className="container about-hero__grid">
           <div className="about-hero__copy">
@@ -103,17 +101,18 @@ const About = () => {
       </section>
 
       <section className="section">
-        <div className="container timeline">
-          {/* Added wrapper H2 for semantics */}
+        <div className="container">
           <h2 className="sr-only">{t('about:timeline.titleSrOnly')}</h2>
-          {Array.isArray(timelineItems) &&
-            timelineItems.map((item, index) => (
-              <div className="timeline-item" key={index}>
-                <span className="timeline-year">{item.year}</span>
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
-              </div>
-            ))}
+          <ul className="timeline" style={{ listStyle: 'none', padding: 0 }}>
+            {Array.isArray(timelineItems) &&
+              timelineItems.map((item, index) => (
+                <li className="timeline-item" key={index}>
+                  <span className="timeline-year">{item.year}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </li>
+              ))}
+          </ul>
         </div>
       </section>
     </main>
