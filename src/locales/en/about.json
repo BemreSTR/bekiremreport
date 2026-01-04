@@ -1,0 +1,107 @@
+{
+    "seo": {
+        "title": "About Me",
+        "description": "Who is Bekir Emre Sarıpınar? A look into my passion for technology, software career, and product development vision."
+    },
+    "hero": {
+        "eyebrow": "About Me",
+        "title": "A developer adding technical vision to the product ecosystem.",
+        "richTitle": "A journey fueled by curiosity — a <product>product</product> and <experience>experience</experience>-driven way of building.",
+        "lead": "I focus on aligning user experience, performance, and accessibility. I build modern interfaces with React + TypeScript and deliver end-to-end solutions when needed with tools like Go and Firebase.",
+        "chipsA11y": "Highlights",
+        "chips": [
+            "React + TypeScript",
+            "Go",
+            "Firebase",
+            "Performance",
+            "Accessibility"
+        ],
+        "summary": {
+            "a11y": "Quick summary",
+            "title": "Quick Summary",
+            "items": [
+                "I keep building projects alongside my studies",
+                "I stay active in social and community work",
+                "I enjoy portrait and black & white photography",
+                "I keep my mind sharp with a daily reading routine"
+            ]
+        }
+    },
+    "story": {
+        "start": {
+            "title": "How did it start?",
+            "p1": "I met computers when I was just 3 years old. Even before learning to read and write, I memorized typing on the keyboard to access game sites. I was always a curious child, tinkering and asking 'how does this work?'.",
+            "p2": "I wrote my first 'Hello World' in high school, and from that moment on, software turned from a hobby into a goal. I chose Computer Engineering at university to ground this curiosity on a solid foundation."
+        },
+        "current": {
+            "title": "What am I doing today?",
+            "p1": "While continuing my studies, I also continue to produce and improve myself in different areas. I nurture my learning not only with classes but also by developing projects, experimenting with new technologies, and staying active in social/community activities.",
+            "p2": "On the technical side, I work on modern web interfaces with React + TypeScript, real-time solutions based on Firebase, performance-oriented services with Go, and bringing product ideas to life end-to-end. Producing solutions for different problems like education, e-commerce, finance, and SaaS broadens my perspective and helps me build better products."
+        }
+    },
+    "randomFacts": {
+        "eyebrow": "Random Facts",
+        "title": "Let's look beyond the showcase",
+        "photo": {
+            "title": "Photography enthusiast",
+            "text": "I especially love shooting portraits and black & white (B&W) frames with my camera."
+        },
+        "book": {
+            "title": "Reading routine",
+            "text": "I read a lot; I made it a habit to read for at least 1 hour every day."
+        },
+        "people": {
+            "title": "Meeting people",
+            "text": "I love meeting new people and listening to different perspectives."
+        },
+        "tea": {
+            "title": "Tea lover",
+            "text": "I prefer tea over coffee; a good tea break during the day does me good."
+        }
+    },
+    "timeline": {
+        "titleSrOnly": "Experience Timeline",
+        "items": [
+            {
+                "year": "2022",
+                "title": "GTU Computer Engineering",
+                "desc": "Started Computer Engineering at Gebze Technical University."
+            },
+            {
+                "year": "2023",
+                "title": "Algorithms & OOP Focus",
+                "desc": "Improved my algorithms, data structures, and object-oriented programming (OOP) skills with C++ and Java."
+            },
+            {
+                "year": "2024",
+                "title": "Independent Product Building",
+                "desc": "Focused on shipping by building independent projects across web, macOS, and mobile."
+            },
+            {
+                "year": "2025",
+                "title": "First Client Products & Team Leadership",
+                "desc": "Started delivering client-focused products from scratch with a vibecoding approach. Led a 6-person software team, owning delivery and coordination."
+            },
+            {
+                "year": "2024",
+                "title": "Product Operations Platform",
+                "desc": "Provided technical leadership on the core team redesigning product operations for a globally operating SaaS product."
+            },
+            {
+                "year": "2022",
+                "title": "Cloud Migration Program",
+                "desc": "Migrated critical financial services to a Kubernetes-based platform, reducing latency by 34% and materially improving observability."
+            },
+            {
+                "year": "2020",
+                "title": "Design System Evolution",
+                "desc": "Rebuilt a React-based component library used across multiple product lines, doubling delivery speed."
+            },
+            {
+                "year": "2017",
+                "title": "First professional experience",
+                "desc": "Began my professional journey as a full-stack developer at a company building IoT-based smart city projects."
+            }
+        ]
+    }
+}

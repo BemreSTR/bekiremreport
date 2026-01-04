@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "links": "Links",
+    "expertise": "Expertise",
+    "status": "Available for new projects",
+    "description": "I build user-focused, high-performance, and accessible digital products with modern web technologies.",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "expertiseItems": {
+      "reactTs": "React & TypeScript",
+      "webMobile": "Web & mobile product development",
+      "macos": "macOS apps",
+      "algoOop": "Algorithms & OOP (C++ / Java)"
+    }
+  },
+  "home": {
+    "eyebrow": "Product-Minded Software Developer",
+    "titleLine1": "Hi, I'm",
+    "titleName": "Bekir Emre.",
+    "subtitle": "I design and build scalable, high-performance, modern digital experiences across web, mobile, and cloud.",
+    "ctaProjects": "Explore My Projects",
+    "ctaContact": "Get In Touch",
+    "stats": {
+      "stackTitle": "Modern Stack",
+      "stackValue": "React 19, Go, Vite",
+      "uiTitle": "UI/UX",
+      "uiValue": "Tailwind, React, shadcn",
+      "dbTitle": "Database",
+      "dbValue": "Supabase, PostgreSQL, Redis"
+    },
+    "highlights": {
+      "eyebrow": "Highlights",
+      "title": "Contributing end-to-end from product discovery to production.",
+      "subtitle": "My experience is shaped around modern JavaScript ecosystem, data visualization, cloud-native architectures, and user-centric iterations.",
+      "item1": {
+        "title": "Design-Driven Approach",
+        "desc": "I work closely with design teams and reinterpret interaction prototypes with code. I have built accessible component libraries."
+      },
+      "item2": {
+        "title": "Scalable Backend",
+        "desc": "I have developed high-traffic APIs in serverless, container, and event-driven architectures. I focus on SLA tracking and observability."
+      },
+      "item3": {
+        "title": "Team Playmaker",
+        "desc": "I take an active role in mentorship, code review, and bringing a technical perspective to product strategies. I love strengthening interdisciplinary communication."
+      }
+    },
+    "projectPreviews": {
+      "eyebrow": "Projects",
+      "title": "Selected recent works",
+      "viewAll": "All Projects",
+      "zenblog": {
+        "tag": "Go · 2026",
+        "desc": "A high-performance and simple blog engine developed with Go, offering Markdown-based content management."
+      },
+      "dinakademi": {
+        "tag": "Education · 2025",
+        "desc": "Modern education platform enriched with interactive tests and video content, based on Vite and Firebase."
+      },
+      "mybaby": {
+        "tag": "E-Commerce · 2025",
+        "desc": "Modern and functional e-commerce platform developed for baby products, based on MERN stack."
+      },
+      "invoice": {
+        "tag": "AI · 2025",
+        "desc": "Smart finance assistant offering invoice scanning with Gemini AI 2.5 Flash and Firebase cloud synchronization."
+      },
+      "safepass": {
+        "tag": "SaaS · Team Lead",
+        "desc": "Real-time student tracking and security management system we developed with a team of 6."
+      },
+      "readingTracker": {
+        "tag": "PWA · 2025",
+        "desc": "Modern platform powered by React 19 and Supabase, tracking daily readings."
+      }
+    },
+    "skills": {
+      "eyebrow": "Skills",
+      "title": "Technologies I trust and use frequently",
+      "frontend": "Frontend",
+      "backend": "Backend & Auth",
+      "other": "Other"
+    }
+  },
+  "blog": {
+    "title": "Thoughts on software development and product building.",
+    "subtitle": "I share experiences and observations about technology, product strategy, and software development.",
+    "readMore": "Read More →",
+    "filterAll": "All",
+    "blogPost": {
+      "notFoundTitle": "Post not found",
+      "notFoundDesc": "The blog post you are looking for may have been moved or is not yet published.",
+      "backToBlog": "Back to Blog",
+      "prevPost": "← Previous Post",
+      "nextPost": "Next Post →"
+    }
+  },
+  "categories": {
+    "technical": "Technical",
+    "product": "Product",
+    "culture": "Culture",
+    "design": "Design",
+    "strategy": "Strategy",
+    "personalDevelopment": "Personal Development"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The link may be incorrect or the content may have moved.",
+    "backHome": "Back to Home"
+  },
+  "a11y": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkında",
+    "projects": "Projeler",
+    "blog": "Blog",
+    "contact": "İletişim"
+  },
+  "footer": {
+    "navigation": "Gezinti",
+    "links": "Bağlantılar",
+    "expertise": "Uzmanlıklar",
+    "status": "Yeni projeler için uygun",
+    "description": "Modern web teknolojileriyle kullanıcı odaklı, performanslı ve erişilebilir dijital ürünler geliştiriyorum.",
+    "copyright": "Tüm hakları saklıdır.",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar",
+    "expertiseItems": {
+      "reactTs": "React & TypeScript",
+      "webMobile": "Web & mobil ürün geliştirme",
+      "macos": "macOS uygulamaları",
+      "algoOop": "Algoritma & OOP (C++ / Java)"
+    }
+  },
+  "home": {
+    "eyebrow": "Ürün Odaklı Yazılım Geliştirici",
+    "titleLine1": "Merhaba, ben",
+    "titleName": "Bekir Emre.",
+    "subtitle": "Web, mobil ve bulut teknolojileriyle ölçeklenebilir, performanslı ve modern dijital deneyimler tasarlıyor ve hayata geçiriyorum.",
+    "ctaProjects": "Projelerimi İncele",
+    "ctaContact": "Benimle İletişime Geç",
+    "stats": {
+      "stackTitle": "Modern Stack",
+      "stackValue": "React 19, Go, Vite",
+      "uiTitle": "UI/UX",
+      "uiValue": "Tailwind, React, shadcn",
+      "dbTitle": "Database",
+      "dbValue": "Supabase, PostgresSQL, Redis"
+    },
+    "highlights": {
+      "eyebrow": "Öne Çıkan Yönler",
+      "title": "Ürün keşfinden üretime kadar uçtan uca katkı sağlıyorum.",
+      "subtitle": "Deneyimim, modern JavaScript ekosistemi, veri görselleştirme, bulut yerel mimariler ve kullanıcı merkezli iterasyonlar etrafında şekilleniyor.",
+      "item1": {
+        "title": "Tasarım Odaklı Yaklaşım",
+        "desc": "Tasarım ekipleriyle yakın çalışır, etkileşim prototiplerini kodla yeniden yorumlarım. Erişilebilir bileşen kütüphaneleri oluşturdum."
+      },
+      "item2": {
+        "title": "Ölçeklenebilir Backend",
+        "desc": "Serverless, konteyner ve event-driven mimarilerde yüksek trafikli API'ler geliştirdim. SLA takibi ve gözlemlenebilirlik odaklıyım."
+      },
+      "item3": {
+        "title": "Takım Oyun Kurucusu",
+        "desc": "Mentorluk, kod incelemesi ve ürün stratejilerine teknik bakış getirme konusunda aktif rol alıyorum. Disiplinler arası iletişimi güçlendirmeyi seviyorum."
+      }
+    },
+    "projectPreviews": {
+      "eyebrow": "Projeler",
+      "title": "Son çalışmalardan seçki",
+      "viewAll": "Tüm Projeler",
+      "zenblog": {
+        "tag": "Go · 2026",
+        "desc": "Markdown tabanlı içerik yönetimi sunan, Go ile geliştirilmiş yüksek performanslı ve sade bir blog motoru."
+      },
+      "dinakademi": {
+        "tag": "Eğitim · 2025",
+        "desc": "İnteraktif testler ve video içeriklerle zenginleştirilmiş, Vite ve Firebase tabanlı modern eğitim platformu."
+      },
+      "mybaby": {
+        "tag": "E-Ticaret · 2025",
+        "desc": "Bebek ürünleri için geliştirilmiş, MERN stack tabanlı modern ve fonksiyonel e-ticaret platformu."
+      },
+      "invoice": {
+        "tag": "AI · 2025",
+        "desc": "Gemini AI 2.5 Flash ile fatura tarama ve Firebase bulut senkronizasyonu sunan akıllı finans asistanı."
+      },
+      "safepass": {
+        "tag": "SaaS · Team Lead",
+        "desc": "6 kişilik bir ekiple geliştirdiğimiz, gerçek zamanlı öğrenci takip ve güvenlik yönetim sistemi."
+      },
+      "readingTracker": {
+        "tag": "PWA · 2025",
+        "desc": "React 19 ve Supabase ile güçlendirilmiş, günlük okumaları takip eden modern bir platform."
+      }
+    },
+    "skills": {
+      "eyebrow": "Beceriler",
+      "title": "Güvendiğim ve sıkça kullandığım teknolojiler",
+      "frontend": "Frontend",
+      "backend": "Backend & Auth",
+      "other": "Diğer"
+    }
+  },
+  "blog": {
+    "title": "Yazılım geliştirme ve ürün yönetimi üzerine düşüncelerim.",
+    "subtitle": "Teknoloji, ürün stratejisi ve yazılım geliştirme süreçleriyle ilgili deneyimlerimi ve gözlemlerimi paylaşıyorum.",
+    "readMore": "Devamını Oku →",
+    "filterAll": "Tümü",
+    "blogPost": {
+      "notFoundTitle": "Yazı bulunamadı",
+      "notFoundDesc": "Aradığın blog yazısı taşınmış veya henüz yayınlanmamış olabilir.",
+      "backToBlog": "Blog'a Dön",
+      "prevPost": "← Önceki Yazı",
+      "nextPost": "Sonraki Yazı →"
+    }
+  },
+  "categories": {
+    "technical": "Teknik",
+    "product": "Ürün",
+    "culture": "Kültür",
+    "design": "Tasarım",
+    "strategy": "Strateji",
+    "personalDevelopment": "Kişisel Gelişim"
+  },
+  "notFound": {
+    "title": "Bu sayfa bulunamadı",
+    "subtitle": "Link hatalı olabilir ya da içerik taşınmış olabilir.",
+    "backHome": "Ana Sayfa'ya Dön"
+  },
+  "a11y": {
+    "openMenu": "Menüyü Aç",
+    "closeMenu": "Menüyü Kapat"
+  }
+}

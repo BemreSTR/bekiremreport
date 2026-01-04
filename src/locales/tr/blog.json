@@ -1,0 +1,29 @@
+{
+    "seo": {
+        "title": "Blog",
+        "description": "Yazılım geliştirme, ürün yönetimi ve teknoloji dünyasına dair teknik makaleler ve deneyim paylaşımları."
+    },
+    "hero": {
+        "eyebrow": "Blog",
+        "title": "Deneyimler, fikirler ve teknik notlar.",
+        "lead": "Yazılım mimarisi, ürün yönetimi ve ekip kültürü üzerine edindiğim tecrübeleri paylaşıyorum."
+    },
+    "categories": {
+        "all": "Hepsi",
+        "tech": "Teknik",
+        "product": "Ürün",
+        "culture": "Kültür",
+        "design": "Tasarım",
+        "strategy": "Strateji",
+        "personal": "Kişisel Gelişim"
+    },
+    "ui": {
+        "readTime": "{{minutes}} dakika okuma",
+        "readMore": "Devamını Oku →",
+        "backToBlog": "Blog'a Dön",
+        "prevPost": "← Önceki Yazı",
+        "nextPost": "Sonraki Yazı →",
+        "notFoundTitle": "Yazı bulunamadı",
+        "notFoundDesc": "Aradığın blog yazısı taşınmış veya henüz yayınlanmamış olabilir."
+    }
+}

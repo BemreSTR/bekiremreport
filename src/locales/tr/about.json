@@ -1,0 +1,87 @@
+{
+    "seo": {
+        "title": "Hakkımda",
+        "description": "Bekir Emre Sarıpınar kimdir? Teknoloji tutkusu, yazılım kariyeri ve ürün geliştirme vizyonu üzerine bir bakış."
+    },
+    "hero": {
+        "eyebrow": "Hakkımda",
+        "title": "Ürün ekosistemine teknik vizyon katan bir geliştirici.",
+        "richTitle": "Meraktan beslenen bir yolculuk; <product>ürün</product> ve <experience>deneyim</experience> odaklı bir geliştirme yaklaşımı.",
+        "lead": "Kullanıcı deneyimi, performans ve erişilebilirliği aynı çizgide buluşturmaya odaklanıyorum. React + TypeScript ile modern arayüzler geliştiriyor, gerektiğinde Go ve Firebase gibi araçlarla uçtan uca çözümler üretiyorum.",
+        "chipsA11y": "Öne çıkan odaklar",
+        "chips": [
+            "React + TypeScript",
+            "Go",
+            "Firebase",
+            "Performans",
+            "Erişilebilirlik"
+        ],
+        "summary": {
+            "a11y": "Kısa özet",
+            "title": "Kısa Özet",
+            "items": [
+                "Okulumu sürdürürken proje geliştirmeye devam ediyorum",
+                "Sosyal ve toplumsal faaliyetlerde aktif kalıyorum",
+                "Portre ve siyah-beyaz fotoğraf çekmeyi seviyorum",
+                "Her gün okuma rutiniyle zihnimi taze tutuyorum"
+            ]
+        }
+    },
+    "story": {
+        "start": {
+            "title": "Nasıl başladım?",
+            "p1": "Bilgisayarla daha 3 yaşındayken tanıştım. Okuma yazmaya başlamadan önce bile klavyeden yazmayı ezberleyip oyun sitelerine giriyordum. Hep meraklı, kurcalayan ve “bu nasıl çalışıyor?” diye soran bir çocuk oldum.",
+            "p2": "İlk “Hello World”ümü lisede yazdım ve o andan itibaren yazılım benim için bir hobi olmaktan çıkıp hedefe dönüştü. Üniversitede de bilgisayar mühendisliğini tercih ederek bu merakı daha sağlam bir temele oturttum."
+        },
+        "current": {
+            "title": "Bugün ne yapıyorum?",
+            "p1": "Bir yandan okulumu sürdürürken, bir yandan da kendimi farklı alanlarda üretmeye ve geliştirmeye devam ediyorum. Öğrenmeyi sadece derslerle sınırlamayıp; proje geliştirerek, yeni teknolojileri deneyerek ve toplumsal/sosyal faaliyetlerin içinde aktif kalarak besliyorum.",
+            "p2": "Teknik tarafta; React + TypeScript ile modern web arayüzleri, Firebase tabanlı gerçek zamanlı çözümler, Go ile performans odaklı servisler ve ürünleşebilecek fikirleri uçtan uca hayata geçirme üzerine çalışıyorum. Eğitim, e-commerce, finans ve SaaS gibi farklı problemler üzerinde üretmek; bakış açımı genişletiyor ve daha iyi ürünler geliştirmeme yardımcı oluyor."
+        }
+    },
+    "randomFacts": {
+        "eyebrow": "Rastgele Gerçekler",
+        "title": "Biraz da vitrin dışına bakalım",
+        "photo": {
+            "title": "Fotoğraf tutkunu",
+            "text": "Fotoğraf makinemle özellikle portre ve siyah-beyaz (B&W) kareler çekmeyi seviyorum."
+        },
+        "book": {
+            "title": "Kitap rutini",
+            "text": "Bol bol kitap okurum; her gün en az 1 saat okumayı alışkanlık haline getirdim."
+        },
+        "people": {
+            "title": "İnsanlarla tanışmak",
+            "text": "Yeni insanlarla tanışmayı ve farklı bakış açıları dinlemeyi seviyorum."
+        },
+        "tea": {
+            "title": "Çay sever",
+            "text": "Kahveden çok çay tüketmeyi tercih ederim; gün içinde iyi bir çay molası bana iyi gelir."
+        }
+    },
+    "timeline": {
+        "titleSrOnly": "Deneyim Zaman Çizelgesi",
+        "items": [
+            {
+                "year": "2022",
+                "title": "GTÜ Bilgisayar Mühendisliği",
+                "desc": "Gebze Teknik Üniversitesi Bilgisayar Mühendisliği bölümüne başladım."
+            },
+            {
+                "year": "2023",
+                "title": "Algoritma &amp; OOP odağı",
+                "desc": "C++ ve Java ile algoritma, veri yapıları ve nesne yönelimli programlama (OOP) becerilerimi geliştirdim."
+            },
+            {
+                "year": "2024",
+                "title": "Bireysel ürün geliştirme",
+                "desc": "Web, macOS ve mobil tarafta bireysel projeler geliştirerek üretime odaklandım."
+            },
+            {
+                "year": "2025",
+                "title": "İlk müşteri ürünleri &amp; ekip liderliği",
+                "desc": "Vibecoding yaklaşımıyla sıfırdan müşteri odaklı ürünler çıkarmaya başladım. Süreç boyunca 6 kişilik bir yazılım ekibine liderlik ederek teslim ve koordinasyonu yönettim."
+            }
+        ]
+    }
+}

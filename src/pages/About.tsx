@@ -1,100 +1,123 @@
-const About = () => (
-  <main>
-    <section className="page-hero">
-      <div className="container narrow">
-        <p className="eyebrow">Hakkımda</p>
-        <h1>Ürün ekosistemine teknik vizyon katan bir geliştirici.</h1>
-        <p className="lead">
-          Tasarım odaklı ürün geliştirmeye gönül verdim. Yazılım mimarisi ile kullanıcı deneyimini aynı masada
-          buluşturmayı seviyorum.
-        </p>
-      </div>
-    </section>
+import { Trans, useTranslation } from 'react-i18next'
+import Seo from '@/components/Seo'
 
-    <section className="section">
-      <div className="container split">
-        <div className="panel">
-          <h2>Nasıl başladım?</h2>
-          <p>
-            Küçük yaşlarda elektronik kitlerle uğraşırken hızla web geliştirmeye yöneldim. Lise yıllarımda
-            mahallemizin spor kulübü için basit bir CMS hazırladığımda ilk kez gerçek kullanıcılarla buluşan bir ürün
-            koydum ortaya.
-          </p>
-          <p>
-            Üniversitede bilgisayar mühendisliği okurken, sosyal girişimler ve hackathon&apos;larda deneysel projeler
-            geliştirdim. Bu süreç beni kullanıcı araştırması ve veri odaklı karar alma konusunda derinlemesine
-            düşünmeye itti.
-          </p>
-        </div>
-        <div className="panel">
-          <h2>Bugün ne yapıyorum?</h2>
-          <p>
-            Ürün takımlarıyla birlikte yeni iş alanlarını keşfediyor, fikirden prototipe, oradan da ölçeklenebilir
-            platformlara uzanan süreçleri yönetiyorum. Start-up&apos;lar ve kurumsal ekipler için hibrit çalışma
-            modelleri kuruyorum.
-          </p>
-          <p>
-            Teknik olarak frontend mimarileri, modüler monorepo düzenleri ve bulut üzerinde sıfırdan kurulan
-            altyapılarla ilgileniyorum. Sürekli ölçümleyerek iterasyon yapmayı önceliklendiriyorum.
-          </p>
-        </div>
-      </div>
-    </section>
+interface TimelineItem {
+  year: string
+  title: string
+  desc: string
+}
 
-    <section className="section section-alt">
-      <div className="container">
-        <div className="section-header">
-          <div>
-            <p className="eyebrow">Rastgele Gerçekler</p>
-            <h2>Biraz da vitrin dışına bakalım</h2>
+const About = () => {
+  const { t } = useTranslation()
+
+  const heroChips = t('about:hero.chips', { returnObjects: true }) as string[]
+  const heroSummaryItems = t('about:hero.summary.items', { returnObjects: true }) as string[]
+  const timelineItems = t('about:timeline.items', { returnObjects: true }) as TimelineItem[]
+
+  return (
+    <main>
+      <Seo title={t('about:seo.title')} description={t('about:seo.description')} />
+      <section className="page-hero about-hero">
+        <div className="container about-hero__grid">
+          <div className="about-hero__copy">
+            <p className="eyebrow">{t('about:hero.eyebrow')}</p>
+            <h1 className="about-hero__title">
+              <Trans
+                i18nKey="about:hero.richTitle"
+                components={{
+                  product: <span />,
+                  experience: <span />,
+                }}
+              />
+            </h1>
+            <p className="about-hero__lead">{t('about:hero.lead')}</p>
+
+            {Array.isArray(heroChips) && heroChips.length > 0 && (
+              <div className="about-hero__chips" aria-label={t('about:hero.chipsA11y')}>
+                {heroChips.map((chip) => (
+                  <span className="chip" key={chip}>
+                    {chip}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <div className="about-hero__panel" aria-label={t('about:hero.summary.a11y')}>
+            <p className="about-hero__panel-eyebrow">{t('about:hero.summary.title')}</p>
+            <ul className="about-hero__panel-list">
+              {Array.isArray(heroSummaryItems) &&
+                heroSummaryItems.map((item) => (
+                  <li key={item}>
+                    <span className="about-hero__dot" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+            </ul>
           </div>
         </div>
-        <div className="fact-grid">
-          <article className="fact-card">
-            <h3>Analog meraklısı</h3>
-            <p>Hafta sonları mekanik klavyeler ve analog synthesizer&apos;larla uğraşıp kişisel projelerime ses tasarımı ekliyorum.</p>
-          </article>
-          <article className="fact-card">
-            <h3>Harita koleksiyoncusu</h3>
-            <p>Veriyi görselleştirmenin en iyi yolu farklı projeksiyonlar keşfetmek olduğuna inanırım; 40&apos;ın üzerinde fiziksel haritam var.</p>
-          </article>
-          <article className="fact-card">
-            <h3>Kahve demleme</h3>
-            <p>Ekosistemimdeki her sprint, V60 ile başlar. Demlemenin kimyası, yazılım süreçlerine bakışımı bile etkiliyor.</p>
-          </article>
-          <article className="fact-card">
-            <h3>Müzik senkronizasyonu</h3>
-            <p>Kısa filmlere elektronik müzik besteleyip dağıtımını üstleniyorum; müziğin ritmi, sprint planlarına bakış açımı şekillendiriyor.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section className="section">
-      <div className="container timeline">
-        <div className="timeline-item">
-          <span className="timeline-year">2024</span>
-          <h3>Ürün Operasyon Platformu</h3>
-          <p>Uluslararası ölçekte çalışan bir SaaS ürününün ürün operasyonlarını yeniden tasarlayan çekirdek ekipte teknik liderlik yaptım.</p>
+      <section className="section">
+        <div className="container split">
+          <div className="panel">
+            <h2>{t('about:story.start.title')}</h2>
+            <p>{t('about:story.start.p1')}</p>
+            <p>{t('about:story.start.p2')}</p>
+          </div>
+          <div className="panel">
+            <h2>{t('about:story.current.title')}</h2>
+            <p>{t('about:story.current.p1')}</p>
+            <p>{t('about:story.current.p2')}</p>
+          </div>
         </div>
-        <div className="timeline-item">
-          <span className="timeline-year">2022</span>
-          <h3>Bulut Geçişi Programı</h3>
-          <p>Kritik finansal servisleri Kubernetes tabanlı altyapıya taşıyarak gecikmeyi %34 azalttım, gözlemlenebilirliği ciddi ölçüde geliştirdim.</p>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <div className="section-header">
+            <div>
+              <p className="eyebrow">{t('about:randomFacts.eyebrow')}</p>
+              <h2>{t('about:randomFacts.title')}</h2>
+            </div>
+          </div>
+          <div className="fact-grid">
+            <article className="fact-card">
+              <h3>{t('about:randomFacts.photo.title')}</h3> <br />
+              <p>{t('about:randomFacts.photo.text')}</p>
+            </article>
+            <article className="fact-card">
+              <h3>{t('about:randomFacts.book.title')}</h3> <br />
+              <p>{t('about:randomFacts.book.text')}</p>
+            </article>
+            <article className="fact-card">
+              <h3>{t('about:randomFacts.people.title')}</h3> <br />
+              <p>{t('about:randomFacts.people.text')}</p>
+            </article>
+            <article className="fact-card">
+              <h3>{t('about:randomFacts.tea.title')}</h3> <br />
+              <p>{t('about:randomFacts.tea.text')}</p>
+            </article>
+          </div>
         </div>
-        <div className="timeline-item">
-          <span className="timeline-year">2020</span>
-          <h3>Design System Evrimi</h3>
-          <p>Farklı ürün gruplarında kullanılan React tabanlı bileşen kütüphanesini yeniden inşa ederek teslim hızını iki katına çıkardım.</p>
+      </section>
+
+      <section className="section">
+        <div className="container timeline">
+          {/* Added wrapper H2 for semantics */}
+          <h2 className="sr-only">{t('about:timeline.titleSrOnly')}</h2>
+          {Array.isArray(timelineItems) &&
+            timelineItems.map((item, index) => (
+              <div className="timeline-item" key={index}>
+                <span className="timeline-year">{item.year}</span>
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
+            ))}
         </div>
-        <div className="timeline-item">
-          <span className="timeline-year">2017</span>
-          <h3>İlk profesyonel deneyim</h3>
-          <p>IoT tabanlı akıllı şehir projeleri geliştiren bir firmada tam yığın geliştirici olarak çalışmaya başladım.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-)
+      </section>
+    </main>
+  )
+}
 
 export default About

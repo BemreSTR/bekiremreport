@@ -1,0 +1,29 @@
+{
+    "seo": {
+        "title": "Blog",
+        "description": "Technical articles and experience sharing on software development, product management, and the world of technology."
+    },
+    "hero": {
+        "eyebrow": "Blog",
+        "title": "Experiences, ideas and technical notes.",
+        "lead": "I share my experiences on software architecture, product management, and team culture."
+    },
+    "categories": {
+        "all": "All",
+        "tech": "Technical",
+        "product": "Product",
+        "culture": "Culture",
+        "design": "Design",
+        "strategy": "Strategy",
+        "personal": "Personal Growth"
+    },
+    "ui": {
+        "readTime": "{{minutes}} min read",
+        "readMore": "Read More →",
+        "backToBlog": "Back to Blog",
+        "prevPost": "← Previous Post",
+        "nextPost": "Next Post →",
+        "notFoundTitle": "Post not found",
+        "notFoundDesc": "The blog post you are looking for may have been moved or not published yet."
+    }
+}

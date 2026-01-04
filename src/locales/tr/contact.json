@@ -1,0 +1,38 @@
+{
+    "seo": {
+        "title": "İletişim",
+        "description": "Bizimle iletişime geçin. Proje işbirlikleri, danışmanlık veya sadece tanışmak için."
+    },
+    "hero": {
+        "eyebrow": "İletişim",
+        "title": "Birlikte neler inşa edebileceğimizi konuşalım.",
+        "lead": "Yeni fikirler, danışmanlık ve teknik keşif süreçleri için bana ulaşın. 24 saat içerisinde geri dönüş yapıyorum."
+    },
+    "info": {
+        "title": "Hızlı Bağlantılar",
+        "email": "E-posta",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "location": "Konum",
+        "locationVal": "Gebze, Kocaeli · Uzaktan çalışmaya açık",
+        "noteTitle": "Takvim paylaşımı",
+        "noteText": "İlk görüşme için 30 dakikalık ürün veya teknik keşif çağrısı planlayabiliriz. İhtiyacınızı paylaşmanız yeterli."
+    },
+    "form": {
+        "title": "Mesaj Gönder",
+        "name": "Adınız",
+        "namePH": "Ad Soyad",
+        "email": "E-posta",
+        "emailPH": "ornek@firma.com",
+        "topic": "Konu",
+        "message": "Mesajınız",
+        "messagePH": "İhtiyacınızı kısaca anlatın",
+        "submit": "Gönder",
+        "topics": {
+            "discovery": "Ürün keşfi",
+            "consulting": "Teknik danışmanlık",
+            "mentoring": "Ekip mentoring",
+            "event": "Etkinlik ve konuşma"
+        }
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "seo": {
+        "title": "Projelerim",
+        "description": "Geliştirdiğim web, mobil ve SaaS projeleri. React, Go, Node.js ve cloud teknolojileri ile gerçek dünya çözümleri."
+    },
+    "hero": {
+        "eyebrow": "Projeler",
+        "title": "Ürün stratejisinden teknik mimariye uzanan çalışmalar.",
+        "lead": "Kullanıcı hedeflerini veriyle doğrulayan, performans ve erişilebilirlik standartlarını gözeten platformlar geliştiriyorum."
+    },
+    "items": {
+        "zenblog": {
+            "tag": "Backend · Go · 2026",
+            "title": "ZenBlog: Performans Odaklı Blog Motoru",
+            "desc": "Go dili ile geliştirilmiş, hız ve sadeliği ön planda tutan modern bir blog motorudur. İçerikleri Markdown dosyalarından okuyarak dinamik temalar ve statik varlıklarla birlikte yüksek performanslı bir web sitesi olarak sunar. DigitalOcean Droplet üzerinde kendi VPS sunucumda host edilmektedir.",
+            "substack": {
+                "label1": "Backend & Deployment:",
+                "val1": "Go (Golang), HTML Templates, DigitalOcean VPS",
+                "label2": "Frontend & Content:",
+                "val2": "JavaScript, CSS, Markdown"
+            }
+        },
+        "dinakademi": {
+            "tag": "Eğitim · EdTech · 2025",
+            "title": "Din Akademi: İnteraktif Eğitim Platformu",
+            "desc": "5-8. sınıf öğrencileri için geliştirilmiş, Din Kültürü ve Ahlak Bilgisi dersi içeriklerini modern bir arayüzle sunan eğitim platformu. YouTube entegrasyonu, Kahoot testleri ve Wordwall aktiviteleri ile ders çalışmayı eğlenceli hale getirir. Firebase tabanlı admin paneli sayesinde içerik yönetimi, sürükle-bırak sıralama ve anlık güncelleme imkanı sunar.",
+            "substack": {
+                "label1": "Frontend:",
+                "val1": "Vite, TypeScript, Vanilla CSS, SortableJS",
+                "label2": "Backend & Cloud:",
+                "val2": "Firebase (Firestore, Auth, Storage), GitHub Actions (CI/CD)"
+            }
+        },
+        "mybaby": {
+            "tag": "E-Ticaret · 2025",
+            "title": "MyBaby: Bebek Ürünleri E-Ticaret Platformu",
+            "desc": "Bebek ürünleri sektörü için tasarlanmış, modern ve kullanıcı dostu bir e-ticaret platformu. Ürün listeleme, gelişmiş filtreleme, sepet yönetimi ve misafir sipariş sistemi gibi temel e-ticaret fonksiyonlarını barındırır. Performans odaklı MERN stack mimarisiyle tüm cihazlarda akıcı bir alışveriş deneyimi sunar.",
+            "substack": {
+                "label1": "Stack:",
+                "val1": "React.js, Node.js, Express.js, MongoDB",
+                "label2": "Öne Çıkan:",
+                "val2": "Sepet Sistemi, Dinamik Filtreleme, Responsive Design"
+            }
+        },
+        "invoice": {
+            "tag": "AI · Finans · 2025",
+            "title": "Fatura Takip Asistanı",
+            "desc": "Modern web tabanlı fatura takip uygulaması. Google Gemini 2.5 Flash AI desteği ile fatura fotoğraflarından otomatik veri çekme ve Firebase ile gerçek zamanlı bulut senkronizasyonu sağlar. Harcama analizleri, kategori bazlı grafikler ve çoklu kullanıcı desteği ile kişisel finans yönetimini kolaylaştırır.",
+            "substack": {
+                "label1": "Frontend:",
+                "val1": "React 19, TypeScript, Vite 6, Tailwind CSS, Recharts",
+                "label2": "Backend & AI:",
+                "val2": "Firebase (Auth, Firestore), Google Gemini 2.5 Flash"
+            }
+        },
+        "safepass": {
+            "tag": "SaaS · Team Lead · 2024",
+            "title": "SafePass: Öğrenci Taşımacılığı Yönetim Platformu",
+            "desc": "6 kişilik bir ekibe liderlik ederek geliştirdiğimiz SafePass, öğrenci güvenliğini merkeze alan çok katmanlı bir yönetim platformudur. Gerçek zamanlı GPS takibi, rule-based acil durum yönetimi ve veli-şoför-okul arası kesintisiz iletişim sağlar. Role-based access control (RBAC), anlık bildirimler ve PII maskeleme destekli raporlama sistemlerini içerir.",
+            "substack": {
+                "label1": "Backend:",
+                "val1": "NestJS, TypeORM, PostgreSQL, Firebase Auth, Socket.io",
+                "label2": "Web & Mobile:",
+                "val2": "Next.js 16, Tailwind CSS, Flutter, Google Maps"
+            }
+        },
+        "readingTracker": {
+            "tag": "PWA · 2025",
+            "title": "Okuma Takip Uygulaması",
+            "desc": "Günlük kitap okuma alışkanlıklarını dijital ortamda takip etmek için geliştirilmiş, mobil uyumlu bir web uygulaması. Okuma hedefleri belirleme, ilerleme takibi ve gerçek zamanlı senkronizasyon özelliklerine sahiptir."
+        },
+        "netusage": {
+            "tag": "Tool · macOS · 2025",
+            "title": "netusage: macOS Network Usage Monitor",
+            "desc": "macOS sistemleri için geliştirilmiş, hafif ve güçlü bir komut satırı aracıdır. WiFi veri kullanımını anlık olarak izler, SQLite veritabanında saklar ve saatlik, günlük veya özel zaman aralıklarında detaylı raporlar sunar. Counter reset durumlarına karşı dirençli mimarisi ile doğru veri takibi sağlar."
+        }
+    }
+}

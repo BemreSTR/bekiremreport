@@ -1,0 +1,38 @@
+{
+    "seo": {
+        "title": "Contact",
+        "description": "Get in touch. For project collaborations, consulting, or just to say hi."
+    },
+    "hero": {
+        "eyebrow": "Contact",
+        "title": "Let's talk about what we can build together.",
+        "lead": "Reach out for new ideas, consulting, and technical discovery processes. I respond within 24 hours."
+    },
+    "info": {
+        "title": "Quick Links",
+        "email": "Email",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "location": "Location",
+        "locationVal": "Gebze, Kocaeli · Open to remote work",
+        "noteTitle": "Calendar scheduling",
+        "noteText": "We can schedule a 30-minute product or technical discovery call for the first meeting. Just share your needs."
+    },
+    "form": {
+        "title": "Send Message",
+        "name": "Name",
+        "namePH": "Name Surname",
+        "email": "Email",
+        "emailPH": "example@company.com",
+        "topic": "Topic",
+        "message": "Message",
+        "messagePH": "Briefly describe your need",
+        "submit": "Send",
+        "topics": {
+            "discovery": "Product discovery",
+            "consulting": "Technical consulting",
+            "mentoring": "Team mentoring",
+            "event": "Events and speaking"
+        }
+    }
+}

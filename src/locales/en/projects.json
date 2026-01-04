@@ -1,0 +1,78 @@
+{
+    "seo": {
+        "title": "My Projects",
+        "description": "Web, mobile, and SaaS projects I developed. Real-world solutions with React, Go, Node.js, and cloud technologies."
+    },
+    "hero": {
+        "eyebrow": "Projects",
+        "title": "Work spanning from product strategy to technical architecture.",
+        "lead": "I develop platforms that validate user goals with data and observe performance and accessibility standards."
+    },
+    "items": {
+        "zenblog": {
+            "tag": "Backend · Go · 2026",
+            "title": "ZenBlog: Performance-Oriented Blog Engine",
+            "desc": "A modern blog engine developed with Go, prioritizing speed and simplicity. It reads content from Markdown files and presents it as a high-performance website with dynamic themes and static assets. Hosted on my own VPS via DigitalOcean Droplet.",
+            "substack": {
+                "label1": "Backend & Deployment:",
+                "val1": "Go (Golang), HTML Templates, DigitalOcean VPS",
+                "label2": "Frontend & Content:",
+                "val2": "JavaScript, CSS, Markdown"
+            }
+        },
+        "dinakademi": {
+            "tag": "Education · EdTech · 2025",
+            "title": "Din Akademi: Interactive Education Platform",
+            "desc": "An education platform developed for 5-8th grade students, presenting Religious Culture and Ethics course content with a modern interface. Makes studying fun with YouTube integration, Kahoot tests, and Wordwall activities. Use Firebase-based admin panel for content management, drag-and-drop sorting, and instant updates.",
+            "substack": {
+                "label1": "Frontend:",
+                "val1": "Vite, TypeScript, Vanilla CSS, SortableJS",
+                "label2": "Backend & Cloud:",
+                "val2": "Firebase (Firestore, Auth, Storage), GitHub Actions (CI/CD)"
+            }
+        },
+        "mybaby": {
+            "tag": "E-Commerce · 2025",
+            "title": "MyBaby: Baby Products E-Commerce Platform",
+            "desc": "A modern and user-friendly e-commerce platform designed for the baby products sector. Includes core e-commerce functions such as product listing, advanced filtering, cart management, and guest checkout system. Offers a smooth shopping experience on all devices with its performance-oriented MERN stack architecture.",
+            "substack": {
+                "label1": "Stack:",
+                "val1": "React.js, Node.js, Express.js, MongoDB",
+                "label2": "Highlights:",
+                "val2": "Cart System, Dynamic Filtering, Responsive Design"
+            }
+        },
+        "invoice": {
+            "tag": "AI · Finance · 2025",
+            "title": "Invoice Tracking Assistant",
+            "desc": "Modern web-based invoice tracking application. Provides automatic data extraction from invoice photos with Google Gemini 2.5 Flash AI support and real-time cloud synchronization with Firebase. Simplifies personal finance management with expense analysis, category-based charts, and multi-user support.",
+            "substack": {
+                "label1": "Frontend:",
+                "val1": "React 19, TypeScript, Vite 6, Tailwind CSS, Recharts",
+                "label2": "Backend & AI:",
+                "val2": "Firebase (Auth, Firestore), Google Gemini 2.5 Flash"
+            }
+        },
+        "safepass": {
+            "tag": "SaaS · Team Lead · 2024",
+            "title": "SafePass: Student Transportation Management Platform",
+            "desc": "SafePass, which we developed leading a team of 6, is a multi-layered management platform centering on student safety. Provides real-time GPS tracking, rule-based emergency management, and seamless communication between parent-driver-school. Includes Role-based access control (RBAC), instant notifications, and PII masking supported reporting systems.",
+            "substack": {
+                "label1": "Backend:",
+                "val1": "NestJS, TypeORM, PostgreSQL, Firebase Auth, Socket.io",
+                "label2": "Web & Mobile:",
+                "val2": "Next.js 16, Tailwind CSS, Flutter, Google Maps"
+            }
+        },
+        "readingTracker": {
+            "tag": "PWA · 2025",
+            "title": "Reading Tracker App",
+            "desc": "A mobile-compatible web application developed to track daily reading habits digitally. Features setting reading goals, progress tracking, and real-time synchronization."
+        },
+        "netusage": {
+            "tag": "Tool · macOS · 2025",
+            "title": "netusage: macOS Network Usage Monitor",
+            "desc": "A lightweight and powerful command-line tool developed for macOS systems. Instantly monitors WiFi data usage, stores it in SQLite database, and offers detailed reports in hourly, daily, or custom time intervals. Ensures accurate data tracking with architecture resistant to counter reset situations."
+        }
+    }
+}
