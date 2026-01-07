@@ -1,6 +1,13 @@
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useLocation, useParams } from 'react-router-dom'
 import { isSupportedLanguage } from '@/i18n'
+
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void
+  }
+}
 
 type OgType = 'website' | 'article'
 
@@ -24,6 +31,15 @@ export default function Seo({ title, description, ogType = 'website', date, imag
   const location = useLocation()
   const { lang } = useParams()
   const currentLang = isSupportedLanguage(lang) ? lang : 'tr'
+
+  useEffect(() => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('config', 'G-WPF8R8LK10', {
+        page_path: location.pathname + location.search,
+        page_title: title || SITE_NAME,
+      })
+    }
+  }, [location, title])
 
   const fullTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME
   const canonical = `${SITE_URL}/#${location.pathname}${location.search}`
