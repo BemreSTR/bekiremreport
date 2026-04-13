@@ -81,26 +81,6 @@
                 "year": "2025",
                 "title": "First Client Products & Team Leadership",
                 "desc": "Started delivering client-focused products from scratch with a vibecoding approach. Led a 6-person software team, owning delivery and coordination."
-            },
-            {
-                "year": "2024",
-                "title": "Product Operations Platform",
-                "desc": "Provided technical leadership on the core team redesigning product operations for a globally operating SaaS product."
-            },
-            {
-                "year": "2022",
-                "title": "Cloud Migration Program",
-                "desc": "Migrated critical financial services to a Kubernetes-based platform, reducing latency by 34% and materially improving observability."
-            },
-            {
-                "year": "2020",
-                "title": "Design System Evolution",
-                "desc": "Rebuilt a React-based component library used across multiple product lines, doubling delivery speed."
-            },
-            {
-                "year": "2017",
-                "title": "First professional experience",
-                "desc": "Began my professional journey as a full-stack developer at a company building IoT-based smart city projects."
             }
         ]
     }
