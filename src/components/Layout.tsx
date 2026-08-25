@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { NavLink, Navigate, Outlet, useLocation, useParams } from 'react-router-dom'
+import { NavLink, Navigate, Outlet, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { MenuIcon, XIcon } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Button } from '@/components/ui/button'
@@ -13,6 +13,7 @@ const Layout = () => {
   const { t, i18n } = useTranslation()
   const { lang } = useParams()
   const location = useLocation()
+  const navigate = useNavigate()
 
   const currentLang = isSupportedLanguage(lang) ? lang : 'tr'
 
@@ -63,7 +64,7 @@ const Layout = () => {
               onClick={() => {
                 const nextLang = currentLang === 'tr' ? 'en' : 'tr'
                 const nextPath = swapLangInPath(location.pathname, nextLang)
-                window.location.hash = `#${nextPath}`
+                navigate(nextPath)
               }}
               variant="ghost"
             >
@@ -102,7 +103,7 @@ const Layout = () => {
                       setIsSheetOpen(false)
                       const nextLang = currentLang === 'tr' ? 'en' : 'tr'
                       const nextPath = swapLangInPath(location.pathname, nextLang)
-                      window.location.hash = `#${nextPath}`
+                      navigate(nextPath)
                     }}
                     variant="ghost"
                   >
@@ -189,7 +190,7 @@ const Layout = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/bekir-emre-sar%C4%B1p%C4%B1nar-316834175/"
+                    href="https://www.linkedin.com/in/bekir-emre-sarıpınar-316834175/"
                     target="_blank"
                     rel="noreferrer"
                   >
