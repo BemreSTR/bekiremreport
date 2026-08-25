@@ -30,6 +30,10 @@ function generateSitemap() {
   <url><loc>${SITE_URL}/#/en/blog</loc><lastmod>${today}</lastmod></url>
   <url><loc>${SITE_URL}/#/tr/contact</loc><lastmod>${today}</lastmod></url>
   <url><loc>${SITE_URL}/#/en/contact</loc><lastmod>${today}</lastmod></url>
+  <url><loc>${SITE_URL}/#/tr/privacy</loc><lastmod>${today}</lastmod></url>
+  <url><loc>${SITE_URL}/#/en/privacy</loc><lastmod>${today}</lastmod></url>
+  <url><loc>${SITE_URL}/#/tr/terms</loc><lastmod>${today}</lastmod></url>
+  <url><loc>${SITE_URL}/#/en/terms</loc><lastmod>${today}</lastmod></url>
 
   <!-- Blog Posts -->
 `;

@@ -13,6 +13,10 @@ import contactEn from '@/locales/en/contact.json'
 import contactTr from '@/locales/tr/contact.json'
 import blogPostsEn from '@/locales/en/blogPosts.json'
 import blogPostsTr from '@/locales/tr/blogPosts.json'
+import privacyEn from '@/locales/en/privacy.json'
+import privacyTr from '@/locales/tr/privacy.json'
+import termsEn from '@/locales/en/terms.json'
+import termsTr from '@/locales/tr/terms.json'
 
 export const supportedLanguages = ['tr', 'en'] as const
 export type SupportedLanguage = (typeof supportedLanguages)[number]
@@ -30,6 +34,8 @@ i18n.use(initReactI18next).init({
       projects: projectsTr,
       contact: contactTr,
       blogPosts: blogPostsTr,
+      privacy: privacyTr,
+      terms: termsTr,
     },
     en: {
       common: commonEn,
@@ -38,6 +44,8 @@ i18n.use(initReactI18next).init({
       projects: projectsEn,
       contact: contactEn,
       blogPosts: blogPostsEn,
+      privacy: privacyEn,
+      terms: termsEn,
     },
   },
   fallbackLng: 'tr',

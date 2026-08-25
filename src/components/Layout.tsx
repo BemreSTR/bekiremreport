@@ -232,8 +232,8 @@ const Layout = () => {
               &copy; {new Date().getFullYear()} Bekir Emre Sarıpınar. {t('footer.copyright')}
             </p>
             <div className="footer-legal">
-              <a href="#">{t('footer.privacy')}</a>
-              <a href="#">{t('footer.terms')}</a>
+              <NavLink to={prefixLangPath(currentLang, '/privacy')}>{t('footer.privacy')}</NavLink>
+              <NavLink to={prefixLangPath(currentLang, '/terms')}>{t('footer.terms')}</NavLink>
             </div>
           </div>
         </div>

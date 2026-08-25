@@ -1,0 +1,36 @@
+{
+  "seo": {
+    "title": "Gizlilik Politikası | Bekir Emre Sarıpınar",
+    "description": "Bekir Emre Sarıpınar kişisel web sitesi ve blog gizlilik politikası, çerez kullanımı ve veri koruma ilkeleri."
+  },
+  "hero": {
+    "eyebrow": "Yasal Bilgilendirme",
+    "title": "Gizlilik Politikası",
+    "lead": "Bu gizlilik politikası, bekiremre.dev adresini ziyaret ettiğinizde verilerinizin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar."
+  },
+  "sections": {
+    "intro": {
+      "title": "1. Genel Bakış",
+      "content": "Kişisel verilerinizin gizliliğine ve güvenliğine önem veriyorum. Bu web sitesi kişisel portfolyo ve teknik blog amacıyla işletilmekte olup, ziyaretçilerin kişisel verilerini gizlilik ilkesi doğrultusunda işler."
+    },
+    "dataCollected": {
+      "title": "2. Toplanan Veriler",
+      "content": "Sitemizi ziyaret ettiğinizde iki tür veri işlenebilir:",
+      "item1": "Anonim Kullanım Verileri: Sayfa görüntülemeleri, ziyaret süresi, cihaz ve tarayıcı bilgileri gibi istatistiksel veriler (Google Analytics aracılığıyla).",
+      "item2": "İletişim Formu Verileri: İletişim formu üzerinden kendi rızanızla gönderdiğiniz Ad, E-posta ve Mesaj bilgileri."
+    },
+    "cookies": {
+      "title": "3. Çerezler (Cookies) ve Analitik",
+      "content": "Sitede ziyaretçi deneyimini iyileştirmek ve anonim trafik analizi yapmak amacıyla Google Analytics (gtag.js) çerezleri kullanılmaktadır. Çerezleri tarayıcı ayarlarınızdan dilediğiniz zaman engelleyebilir veya silebilirsiniz."
+    },
+    "dataSharing": {
+      "title": "4. Veri Paylaşımı ve Güvenlik",
+      "content": "Toplanan veriler hiçbir şekilde üçüncü taraflara satılmaz, kiralanmaz veya pazarlama amacıyla paylaşılmaz. İletişim formu üzerinden gönderilen mesajlar yalnızca sizinle iletişim kurmak amacıyla saklanır."
+    },
+    "contact": {
+      "title": "5. İletişim",
+      "content": "Gizlilik politikamız ile ilgili soru, görüş veya talepleriniz için bekiremrebusiness@gmail.com adresinden benimle iletişime geçebilirsiniz."
+    }
+  },
+  "lastUpdated": "Son Güncelleme: 25 Ağustos 2026"
+}

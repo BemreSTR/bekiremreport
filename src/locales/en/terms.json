@@ -1,0 +1,35 @@
+{
+  "seo": {
+    "title": "Terms of Service | Bekir Emre Sarıpınar",
+    "description": "Terms of service, intellectual property rights, and copyright guidelines for Bekir Emre Sarıpınar website."
+  },
+  "hero": {
+    "eyebrow": "Legal Notice",
+    "title": "Terms of Service",
+    "lead": "By accessing and using this website, you agree to comply with and be bound by the following terms of service."
+  },
+  "sections": {
+    "usage": {
+      "title": "1. Terms of Use",
+      "content": "The bekiremre.dev website presents a personal portfolio, project showcases, and technical blog articles. Users commit to using the site in compliance with applicable laws and respecting third-party rights."
+    },
+    "ip": {
+      "title": "2. Intellectual Property Rights",
+      "content": "All text, code snippets, designs, graphics, and logos on this website belong to Bekir Emre Sarıpınar unless specified otherwise by open-source licenses (e.g. LICENSE files in GitHub repositories). Content may not be copied or used for commercial purposes without permission.",
+      "citation": "Short excerpts from blog articles and code snippets may be used provided proper attribution (with a direct link to the original URL) is given."
+    },
+    "disclaimer": {
+      "title": "3. Disclaimer",
+      "content": "Information, articles, and code samples provided on this site are for general informational and educational purposes only. No implicit guarantee is made regarding the accuracy, completeness, or timeliness of the information."
+    },
+    "externalLinks": {
+      "title": "4. External Links",
+      "content": "This website may contain links to third-party websites (GitHub, LinkedIn, etc.). I am not responsible for the content or privacy practices of these external sites."
+    },
+    "changes": {
+      "title": "5. Changes to Terms",
+      "content": "I reserve the right to modify these terms of service at any time. Updated terms become effective immediately upon being published on the site."
+    }
+  },
+  "lastUpdated": "Last Updated: August 25, 2026"
+}

@@ -1,0 +1,36 @@
+{
+  "seo": {
+    "title": "Privacy Policy | Bekir Emre Sarıpınar",
+    "description": "Privacy policy, cookie usage, and data protection principles for Bekir Emre Sarıpınar personal portfolio and blog."
+  },
+  "hero": {
+    "eyebrow": "Legal Notice",
+    "title": "Privacy Policy",
+    "lead": "This privacy policy explains how your data is collected, used, and protected when you visit bekiremre.dev."
+  },
+  "sections": {
+    "intro": {
+      "title": "1. Overview",
+      "content": "I value the privacy and security of your personal data. This website is operated for personal portfolio and technical blog purposes and processes visitor data in accordance with privacy principles."
+    },
+    "dataCollected": {
+      "title": "2. Collected Data",
+      "content": "When you visit our site, two types of data may be processed:",
+      "item1": "Anonymous Usage Data: Statistical data such as page views, visit duration, device, and browser information (via Google Analytics).",
+      "item2": "Contact Form Data: Name, Email, and Message information voluntarily submitted via the contact form."
+    },
+    "cookies": {
+      "title": "3. Cookies & Analytics",
+      "content": "Google Analytics (gtag.js) cookies are used on this site to improve visitor experience and conduct anonymous traffic analysis. You can disable or delete cookies at any time from your browser settings."
+    },
+    "dataSharing": {
+      "title": "4. Data Sharing & Security",
+      "content": "Collected data is never sold, rented, or shared with third parties for marketing purposes. Messages sent via the contact form are stored solely for the purpose of communicating with you."
+    },
+    "contact": {
+      "title": "5. Contact",
+      "content": "For questions, comments, or requests regarding our privacy policy, you can reach out via bekiremrebusiness@gmail.com."
+    }
+  },
+  "lastUpdated": "Last Updated: August 25, 2026"
+}

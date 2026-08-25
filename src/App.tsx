@@ -8,7 +8,9 @@ const BlogPost = lazy(() => import('./pages/BlogPost'))
 const Contact = lazy(() => import('./pages/Contact'))
 const Home = lazy(() => import('./pages/Home'))
 const NotFound = lazy(() => import('./pages/NotFound'))
+const Privacy = lazy(() => import('./pages/Privacy'))
 const Projects = lazy(() => import('./pages/Projects'))
+const Terms = lazy(() => import('./pages/Terms'))
 
 const App = () => (
   <HashRouter>
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:slug" element={<BlogPost />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy" element={<Privacy />} />
+          <Route path="terms" element={<Terms />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

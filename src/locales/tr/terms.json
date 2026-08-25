@@ -1,0 +1,35 @@
+{
+  "seo": {
+    "title": "Kullanım Şartları | Bekir Emre Sarıpınar",
+    "description": "Bekir Emre Sarıpınar web sitesi kullanım şartları, fikri mülkiyet hakları ve telif koşulları."
+  },
+  "hero": {
+    "eyebrow": "Yasal Bilgilendirme",
+    "title": "Kullanım Şartları",
+    "lead": "Bu web sitesini ziyaret ederek ve kullanarak aşağıdaki kullanım şartlarını kabul etmiş sayılırsınız."
+  },
+  "sections": {
+    "usage": {
+      "title": "1. Kullanım Koşulları",
+      "content": "bekiremre.dev web sitesi kişisel portfolyo, proje tanıtımı ve teknik blog yazıları sunar. Kullanıcılar siteyi yasalara, ahlak kurallarına ve üçüncü şahısların haklarına saygılı bir biçimde kullanmayı taahhüt eder."
+    },
+    "ip": {
+      "title": "2. Fikri Mülkiyet Hakları",
+      "content": "Sitede yer alan tüm metinler, kod örnekleri, tasarımlar, grafikler ve logolar Bekir Emre Sarıpınar'a aittir. İçerikler açık kaynak lisansları (ör. GitHub projelerindeki LICENSE dosyaları) aksi belirtilmediği sürece izinsiz kopyalanamaz veya ticari amaçla kullanılamaz.",
+      "citation": "Blog yazılarından ve kod parçacıklarından kaynak gösterilerek (orijinal URL bağlantısı ile) kısa alıntılar yapılabilir."
+    },
+    "disclaimer": {
+      "title": "3. Sorumluluk Reddi",
+      "content": "Sitede sunulan bilgi, makale ve kod parçacıkları yalnızca genel bilgilendirme ve eğitim amacıyla hazırlanmıştır. Bilgilerin güncelliği veya eksiksizliği konusunda herhangi bir zımni garanti verilmemektedir."
+    },
+    "externalLinks": {
+      "title": "4. Dış Bağlantılar",
+      "content": "Web sitesinde üçüncü taraf web sitelerine (GitHub, LinkedIn vb.) yönlendiren bağlantılar bulunabilir. Bu dış sitelerin içeriklerinden veya gizlilik uygulamalarından tarafım sorumlu değildir."
+    },
+    "changes": {
+      "title": "5. Şartlarda Değişiklikler",
+      "content": "Bu kullanım şartlarını dilediğim zaman güncelleme hakkını saklı tutarım. Güncellenen şartlar sitede yayınlandığı andan itibaren geçerlilik kazanır."
+    }
+  },
+  "lastUpdated": "Son Güncelleme: 25 Ağustos 2026"
+}
