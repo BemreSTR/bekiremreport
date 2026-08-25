@@ -190,7 +190,7 @@ const Layout = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/bekir-emre-sarıpınar-316834175/"
+                    href="https://www.linkedin.com/in/bekir-emre-sar%C4%B1p%C4%B1nar-316834175/"
                     target="_blank"
                     rel="noreferrer"
                   >
