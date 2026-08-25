@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SITE_URL = 'https://bekiremresaripinar.online';
+const SITE_URL = 'https://bemrestr.github.io/bekiremreport';
 const BLOG_POSTS_PATH = path.join(__dirname, '../src/data/blogPosts.tsx');
 const SITEMAP_PATH = path.join(__dirname, '../public/sitemap.xml');
 

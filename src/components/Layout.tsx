@@ -14,10 +14,6 @@ const Layout = () => {
   const { lang } = useParams()
   const location = useLocation()
 
-  if (lang && !isSupportedLanguage(lang)) {
-    return <Navigate replace to={swapLangInPath(location.pathname, 'tr')} />
-  }
-
   const currentLang = isSupportedLanguage(lang) ? lang : 'tr'
 
   useEffect(() => {
@@ -25,6 +21,10 @@ const Layout = () => {
       void i18n.changeLanguage(currentLang)
     }
   }, [currentLang, i18n])
+
+  if (lang && !isSupportedLanguage(lang)) {
+    return <Navigate replace to={swapLangInPath(location.pathname, 'tr')} />
+  }
 
   const navItems = [
     { to: '/', label: t('nav.home'), end: true },

@@ -5,7 +5,7 @@ import { isSupportedLanguage } from '@/i18n'
 
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void
+    gtag: (...args: unknown[]) => void
   }
 }
 
@@ -20,8 +20,8 @@ type SeoProps = {
   jsonLd?: object | string
 }
 
-const SITE_NAME = 'bekiremresaripinar.online'
-const SITE_URL = 'https://bekiremresaripinar.online'
+const SITE_NAME = 'bekiremreport'
+const SITE_URL = 'https://bemrestr.github.io/bekiremreport'
 
 function toJsonLd(value: object | string) {
   return typeof value === 'string' ? value : JSON.stringify(value)
