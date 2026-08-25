@@ -30,11 +30,19 @@ const BlogPost = () => {
   }
 
   const isEn = currentLang === 'en'
-  const postTitle = (isEn && post.titleEn) || post.title
+  const translatedTitle = t(`blogPosts:${post.slug}.title`, { defaultValue: '' })
+  const translatedExcerpt = t(`blogPosts:${post.slug}.excerpt`, { defaultValue: '' })
+  const translatedContent = t(`blogPosts:${post.slug}.content`, { defaultValue: '' })
+
+  const postTitle = (isEn && (translatedTitle || post.titleEn)) || post.title
   const postDate = (isEn && post.dateEn) || post.date
   const postReadTime = (isEn && post.readTimeEn) || post.readTime
-  const postContent = (isEn && post.contentEn) || post.content
-  const postExcerpt = (isEn && post.excerptEn) || post.excerpt
+  const postExcerpt = (isEn && (translatedExcerpt || post.excerptEn)) || post.excerpt
+  const postContent = isEn && translatedContent ? (
+    <div dangerouslySetInnerHTML={{ __html: translatedContent }} />
+  ) : (
+    post.contentEn || post.content
+  )
 
   const previousPost = postIndex > 0 ? blogPosts[postIndex - 1] : null
   const nextPost = postIndex < blogPosts.length - 1 ? blogPosts[postIndex + 1] : null
